@@ -1,0 +1,1177 @@
+----------------------------------------
+🔬 Processing C_MB014-2 with relaxed thresholds...
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar MarkDuplicates -I /Volumes/T7/GTMBioinfo/aligned/C_MB014-2.chr12.sorted.bam -O /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-2.chr12.dedup.relaxed.bam -M /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-2.metrics.relaxed.txt --VALIDATION_STRINGENCY SILENT --REMOVE_DUPLICATES false
+00:31:47.023 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:31:47.054 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression15391045503510963866.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression15391045503510963866.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression15391045503510963866.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression15391045503510963866.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression15391045503510963866.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:31:47.055 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:31:47.057 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression18082789686224054945.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression18082789686224054945.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression18082789686224054945.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression18082789686224054945.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression18082789686224054945.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+[Sat Nov 15 00:31:47 CST 2025] MarkDuplicates --INPUT /Volumes/T7/GTMBioinfo/aligned/C_MB014-2.chr12.sorted.bam --OUTPUT /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-2.chr12.dedup.relaxed.bam --METRICS_FILE /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-2.metrics.relaxed.txt --REMOVE_DUPLICATES false --VALIDATION_STRINGENCY SILENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --FLOW_MODE false --FLOW_DUP_STRATEGY FLOW_QUALITY_SUM_STRATEGY --FLOW_USE_END_IN_UNPAIRED_READS false --FLOW_USE_UNPAIRED_CLIPPED_END false --FLOW_UNPAIRED_END_UNCERTAINTY 0 --FLOW_UNPAIRED_START_UNCERTAINTY 0 --FLOW_SKIP_FIRST_N_FLOWS 0 --FLOW_Q_IS_KNOWN_END false --FLOW_EFFECTIVE_QUALITY_THRESHOLD 15 --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Sat Nov 15 00:31:47 CST 2025] Executing as justin@Justins-Mini on Mac OS X 13.5 aarch64; OpenJDK 64-Bit Server VM 21.0.6+9-b895.97; Deflater: Jdk; Inflater: Jdk; Provider GCS is available; Picard version: Version:4.6.2.0
+INFO	2025-11-15 00:31:47	MarkDuplicates	Start of doWork freeMemory: 69847072; totalMemory: 98566144; maxMemory: 4294967296
+INFO	2025-11-15 00:31:47	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2025-11-15 00:31:47	MarkDuplicates	Will retain up to 15561475 data points before spilling to disk.
+00:31:47.183 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:31:47.186 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+WARNING	2025-11-15 00:31:47	AbstractOpticalDuplicateFinderCommandLineProgram	A field field parsed out of a read name was expected to contain an integer and did not. Read name: SRR21014913.29426. Cause: String 'SRR21014913.29426' did not start with a parsable number.
+INFO	2025-11-15 00:31:47	MarkDuplicates	Read 234971 records. 0 pairs never matched.
+INFO	2025-11-15 00:31:47	MarkDuplicates	After buildSortedReadEndLists freeMemory: 188399464; totalMemory: 364904448; maxMemory: 4294967296
+INFO	2025-11-15 00:31:47	MarkDuplicates	Will retain up to 134217728 duplicate indices before spilling to disk.
+INFO	2025-11-15 00:31:48	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2025-11-15 00:31:48	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2025-11-15 00:31:48	MarkDuplicates	Sorting list of duplicate records.
+INFO	2025-11-15 00:31:48	MarkDuplicates	After generateDuplicateIndexes freeMemory: 1006944096; totalMemory: 2111832064; maxMemory: 4294967296
+INFO	2025-11-15 00:31:48	MarkDuplicates	Marking 50089 records as duplicates.
+INFO	2025-11-15 00:31:48	MarkDuplicates	Found 0 optical duplicate clusters.
+00:31:48.191 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:31:48.191 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+INFO	2025-11-15 00:31:48	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+00:31:48.193 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+INFO	2025-11-15 00:31:51	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2025-11-15 00:31:51	MarkDuplicates	Duplicate Index cleanup.
+INFO	2025-11-15 00:31:51	MarkDuplicates	Getting Memory Stats.
+INFO	2025-11-15 00:31:51	MarkDuplicates	Before output close freeMemory: 108771816; totalMemory: 140509184; maxMemory: 4294967296
+INFO	2025-11-15 00:31:51	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2025-11-15 00:31:51	MarkDuplicates	After output close freeMemory: 90107752; totalMemory: 119537664; maxMemory: 4294967296
+[Sat Nov 15 00:31:51 CST 2025] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.07 minutes.
+Runtime.totalMemory()=119537664
+Tool returned:
+0
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar Mutect2 -R /Volumes/T7/GTMBioinfo/reference/Homo_sapiens.GRCh38.dna.chromosome.12.fa -I /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-2.chr12.dedup.relaxed.bam -tumor C_MB014-2 --initial-tumor-lod 2.0 --tumor-lod-to-emit 2.0 --max-reads-per-alignment-start 100 --min-base-quality-score 20 -O /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-2.unfiltered.relaxed.vcf.gz
+00:31:52.317 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:31:52.326 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression159400543250459095.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression159400543250459095.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression159400543250459095.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression159400543250459095.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression159400543250459095.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:31:52.328 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:31:52.331 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1360651498534338928.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1360651498534338928.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1360651498534338928.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1360651498534338928.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1360651498534338928.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:31:52.385 INFO  Mutect2 - ------------------------------------------------------------
+00:31:52.386 INFO  Mutect2 - The Genome Analysis Toolkit (GATK) v4.6.2.0
+00:31:52.386 INFO  Mutect2 - For support and documentation go to https://software.broadinstitute.org/gatk/
+00:31:52.386 INFO  Mutect2 - Executing as justin@Justins-Mini on Mac OS X v13.5 aarch64
+00:31:52.387 INFO  Mutect2 - Java runtime: OpenJDK 64-Bit Server VM v21.0.6+9-b895.97
+00:31:52.387 INFO  Mutect2 - Start Date/Time: November 15, 2025, 12:31:52 a.m. CST
+00:31:52.387 INFO  Mutect2 - ------------------------------------------------------------
+00:31:52.387 INFO  Mutect2 - ------------------------------------------------------------
+00:31:52.387 INFO  Mutect2 - HTSJDK Version: 4.2.0
+00:31:52.387 INFO  Mutect2 - Picard Version: 3.4.0
+00:31:52.387 INFO  Mutect2 - Built for Spark Version: 3.5.0
+00:31:52.389 INFO  Mutect2 - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+00:31:52.389 INFO  Mutect2 - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+00:31:52.390 INFO  Mutect2 - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+00:31:52.390 INFO  Mutect2 - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+00:31:52.390 INFO  Mutect2 - Deflater: JdkDeflater
+00:31:52.390 INFO  Mutect2 - Inflater: JdkInflater
+00:31:52.390 INFO  Mutect2 - GCS max retries/reopens: 20
+00:31:52.390 INFO  Mutect2 - Requester pays: disabled
+00:31:52.390 INFO  Mutect2 - Initializing engine
+00:31:52.407 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:31:52.408 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:31:52.451 INFO  Mutect2 - Done initializing engine
+00:31:52.454 INFO  NativeLibraryLoader - Loading libgkl_utils.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_utils.dylib
+00:31:52.454 WARN  NativeLibraryLoader - Unable to load libgkl_utils.dylib from native/libgkl_utils.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils13767114793018611066.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils13767114793018611066.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils13767114793018611066.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils13767114793018611066.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils13767114793018611066.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:31:52.454 WARN  IntelSmithWaterman - Intel GKL Utils not loaded
+00:31:52.455 INFO  SmithWatermanAligner - AVX accelerated SmithWaterman implementation is not supported, falling back to the Java implementation
+00:31:52.462 INFO  NativeLibraryLoader - Loading libgkl_utils.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_utils.dylib
+00:31:52.462 WARN  NativeLibraryLoader - Unable to load libgkl_utils.dylib from native/libgkl_utils.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils17415549982039480262.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils17415549982039480262.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils17415549982039480262.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils17415549982039480262.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils17415549982039480262.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:31:52.462 WARN  IntelPairHmm - Intel GKL Utils not loaded
+00:31:52.462 INFO  PairHMM - OpenMP multi-threaded AVX-accelerated native PairHMM implementation is not supported
+00:31:52.462 INFO  NativeLibraryLoader - Loading libgkl_utils.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_utils.dylib
+00:31:52.463 WARN  NativeLibraryLoader - Unable to load libgkl_utils.dylib from native/libgkl_utils.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils3988040480083828654.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils3988040480083828654.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils3988040480083828654.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils3988040480083828654.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils3988040480083828654.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:31:52.463 WARN  IntelPairHmm - Intel GKL Utils not loaded
+00:31:52.463 WARN  PairHMM - ***WARNING: Machine does not have the AVX instruction set support needed for the accelerated AVX PairHmm. Falling back to the MUCH slower LOGLESS_CACHING implementation!
+00:31:52.465 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:31:52.476 INFO  ProgressMeter - Starting traversal
+00:31:52.476 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Regions Processed   Regions/Minute
+00:32:02.496 INFO  ProgressMeter -           12:9320837              0.2                 33290         199341.3
+00:32:12.507 INFO  ProgressMeter -          12:17038957              0.3                 61000         182716.8
+00:32:22.508 INFO  ProgressMeter -          12:23402904              0.5                 83960         167741.1
+00:32:32.531 INFO  ProgressMeter -          12:31657322              0.7                113590         170151.0
+00:32:42.587 INFO  ProgressMeter -          12:41422186              0.8                148480         177781.3
+00:32:52.594 INFO  ProgressMeter -          12:49730355              1.0                178340         177990.0
+00:33:02.605 INFO  ProgressMeter -          12:59823869              1.2                214740         183724.3
+00:33:12.618 INFO  ProgressMeter -          12:66759576              1.3                239740         179486.4
+00:33:22.706 INFO  ProgressMeter -          12:73534642              1.5                264230         175704.3
+00:33:32.708 INFO  ProgressMeter -          12:81011877              1.7                291090         174249.7
+00:33:42.753 INFO  ProgressMeter -          12:88522804              1.8                318360         173214.7
+00:33:52.931 INFO  ProgressMeter -          12:96279814              2.0                346170         172431.2
+00:34:02.932 INFO  ProgressMeter -         12:103196875              2.2                371060         170659.8
+00:34:12.943 INFO  ProgressMeter -         12:112953543              2.3                406020         173430.1
+00:34:22.946 INFO  ProgressMeter -         12:124741674              2.5                448220         178728.0
+00:34:30.331 INFO  Mutect2 - 151630 read(s) filtered by: MappingQualityReadFilter 
+0 read(s) filtered by: MappingQualityAvailableReadFilter 
+0 read(s) filtered by: MappingQualityNotZeroReadFilter 
+0 read(s) filtered by: MappedReadFilter 
+0 read(s) filtered by: NotSecondaryAlignmentReadFilter 
+24267 read(s) filtered by: NotDuplicateReadFilter 
+0 read(s) filtered by: PassesVendorQualityCheckReadFilter 
+0 read(s) filtered by: NonChimericOriginalAlignmentReadFilter 
+0 read(s) filtered by: NonZeroReferenceLengthAlignmentReadFilter 
+0 read(s) filtered by: ReadLengthReadFilter 
+0 read(s) filtered by: GoodCigarReadFilter 
+0 read(s) filtered by: WellformedReadFilter 
+175897 total reads filtered out of 234971 reads processed
+00:34:30.331 INFO  ProgressMeter -         12:133274357              2.6                478243         181778.1
+00:34:30.331 INFO  ProgressMeter - Traversal complete. Processed 478243 total regions in 2.6 minutes.
+00:34:30.338 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:34:30.341 INFO  PairHMM - Total compute time in PairHMM computeLogLikelihoods() : 22.629914886
+00:34:30.341 INFO  SmithWatermanAligner - Total compute time in java Smith-Waterman : 63.98 sec
+00:34:30.342 INFO  Mutect2 - Shutting down engine
+[November 15, 2025, 12:34:30 a.m. CST] org.broadinstitute.hellbender.tools.walkers.mutect.Mutect2 done. Elapsed time: 2.63 minutes.
+Runtime.totalMemory()=473956352
+Tool returned:
+SUCCESS
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar FilterMutectCalls -R /Volumes/T7/GTMBioinfo/reference/Homo_sapiens.GRCh38.dna.chromosome.12.fa -V /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-2.unfiltered.relaxed.vcf.gz --min-median-mapping-quality 20 --min-median-base-quality 20 -O /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-2.filtered.relaxed.vcf.gz
+00:34:31.283 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:34:31.292 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6492425408198363828.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6492425408198363828.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6492425408198363828.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6492425408198363828.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6492425408198363828.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:34:31.294 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:34:31.297 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression13965263816319969975.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression13965263816319969975.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression13965263816319969975.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression13965263816319969975.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression13965263816319969975.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:34:31.367 INFO  FilterMutectCalls - ------------------------------------------------------------
+00:34:31.368 INFO  FilterMutectCalls - The Genome Analysis Toolkit (GATK) v4.6.2.0
+00:34:31.369 INFO  FilterMutectCalls - For support and documentation go to https://software.broadinstitute.org/gatk/
+00:34:31.369 INFO  FilterMutectCalls - Executing as justin@Justins-Mini on Mac OS X v13.5 aarch64
+00:34:31.369 INFO  FilterMutectCalls - Java runtime: OpenJDK 64-Bit Server VM v21.0.6+9-b895.97
+00:34:31.369 INFO  FilterMutectCalls - Start Date/Time: November 15, 2025, 12:34:31 a.m. CST
+00:34:31.369 INFO  FilterMutectCalls - ------------------------------------------------------------
+00:34:31.369 INFO  FilterMutectCalls - ------------------------------------------------------------
+00:34:31.369 INFO  FilterMutectCalls - HTSJDK Version: 4.2.0
+00:34:31.370 INFO  FilterMutectCalls - Picard Version: 3.4.0
+00:34:31.370 INFO  FilterMutectCalls - Built for Spark Version: 3.5.0
+00:34:31.372 INFO  FilterMutectCalls - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+00:34:31.372 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+00:34:31.372 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+00:34:31.372 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+00:34:31.372 INFO  FilterMutectCalls - Deflater: JdkDeflater
+00:34:31.372 INFO  FilterMutectCalls - Inflater: JdkInflater
+00:34:31.372 INFO  FilterMutectCalls - GCS max retries/reopens: 20
+00:34:31.372 INFO  FilterMutectCalls - Requester pays: disabled
+00:34:31.372 INFO  FilterMutectCalls - Initializing engine
+00:34:31.433 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:31.444 INFO  FeatureManager - Using codec VCFCodec to read file file:///Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-2.unfiltered.relaxed.vcf.gz
+00:34:31.451 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:31.451 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:31.456 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:31.460 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:31.460 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:31.462 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:31.465 INFO  FilterMutectCalls - Done initializing engine
+00:34:31.476 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:34:31.498 INFO  ProgressMeter - Starting traversal
+00:34:31.498 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+00:34:31.499 INFO  FilterMutectCalls - Starting pass 0 through the variants
+00:34:31.499 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:32.750 INFO  FilterMutectCalls - Finished pass 0 through the variants
+00:34:33.276 INFO  FilterMutectCalls - Starting pass 1 through the variants
+00:34:33.276 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:33.984 INFO  FilterMutectCalls - Finished pass 1 through the variants
+00:34:34.051 INFO  FilterMutectCalls - Starting pass 2 through the variants
+00:34:34.051 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:34.725 INFO  FilterMutectCalls - Finished pass 2 through the variants
+00:34:34.729 INFO  FilterMutectCalls - Starting pass 3 through the variants
+00:34:34.729 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:35.870 INFO  FilterMutectCalls - Finished pass 3 through the variants
+00:34:35.875 INFO  FilterMutectCalls - No variants filtered by: AllowAllVariantsVariantFilter
+00:34:35.876 INFO  FilterMutectCalls - 0 read(s) filtered by: AllowAllReadsReadFilter 
+
+00:34:35.876 INFO  ProgressMeter -         12:130021242              0.1                112360        1539881.2
+00:34:35.876 INFO  ProgressMeter - Traversal complete. Processed 112360 total variants in 0.1 minutes.
+00:34:35.879 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:34:35.883 INFO  FilterMutectCalls - Shutting down engine
+[November 15, 2025, 12:34:35 a.m. CST] org.broadinstitute.hellbender.tools.walkers.mutect.filtering.FilterMutectCalls done. Elapsed time: 0.08 minutes.
+Runtime.totalMemory()=469762048
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar SelectVariants -R /Volumes/T7/GTMBioinfo/reference/Homo_sapiens.GRCh38.dna.chromosome.12.fa -V /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-2.filtered.relaxed.vcf.gz -L 12:25245350-25250930 -O /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-2.KRAS.relaxed.vcf.gz
+00:34:36.733 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:34:36.741 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3848917321981986888.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3848917321981986888.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3848917321981986888.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3848917321981986888.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3848917321981986888.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:34:36.743 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:34:36.745 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression9715851896346197251.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression9715851896346197251.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression9715851896346197251.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression9715851896346197251.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression9715851896346197251.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:34:36.793 INFO  SelectVariants - ------------------------------------------------------------
+00:34:36.794 INFO  SelectVariants - The Genome Analysis Toolkit (GATK) v4.6.2.0
+00:34:36.794 INFO  SelectVariants - For support and documentation go to https://software.broadinstitute.org/gatk/
+00:34:36.794 INFO  SelectVariants - Executing as justin@Justins-Mini on Mac OS X v13.5 aarch64
+00:34:36.794 INFO  SelectVariants - Java runtime: OpenJDK 64-Bit Server VM v21.0.6+9-b895.97
+00:34:36.795 INFO  SelectVariants - Start Date/Time: November 15, 2025, 12:34:36 a.m. CST
+00:34:36.795 INFO  SelectVariants - ------------------------------------------------------------
+00:34:36.795 INFO  SelectVariants - ------------------------------------------------------------
+00:34:36.795 INFO  SelectVariants - HTSJDK Version: 4.2.0
+00:34:36.795 INFO  SelectVariants - Picard Version: 3.4.0
+00:34:36.795 INFO  SelectVariants - Built for Spark Version: 3.5.0
+00:34:36.796 INFO  SelectVariants - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+00:34:36.796 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+00:34:36.796 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+00:34:36.797 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+00:34:36.797 INFO  SelectVariants - Deflater: JdkDeflater
+00:34:36.797 INFO  SelectVariants - Inflater: JdkInflater
+00:34:36.797 INFO  SelectVariants - GCS max retries/reopens: 20
+00:34:36.797 INFO  SelectVariants - Requester pays: disabled
+00:34:36.797 INFO  SelectVariants - Initializing engine
+00:34:36.851 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:36.859 INFO  FeatureManager - Using codec VCFCodec to read file file:///Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-2.filtered.relaxed.vcf.gz
+00:34:36.864 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:36.864 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:36.868 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:36.873 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:36.873 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:36.874 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:36.879 INFO  IntervalArgumentCollection - Processing 5581 bp from intervals
+00:34:36.880 INFO  SelectVariants - Done initializing engine
+00:34:36.895 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:34:36.902 INFO  ProgressMeter - Starting traversal
+00:34:36.902 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+00:34:36.904 INFO  ProgressMeter -             unmapped              0.0                     0              0.0
+00:34:36.904 INFO  ProgressMeter - Traversal complete. Processed 0 total variants in 0.0 minutes.
+00:34:36.906 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:34:36.906 INFO  SelectVariants - Shutting down engine
+[November 15, 2025, 12:34:36 a.m. CST] org.broadinstitute.hellbender.tools.walkers.variantutils.SelectVariants done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=98566144
+✅ Finished C_MB014-2 in 171 seconds
+----------------------------------------
+🔬 Processing C_MB014-3 with relaxed thresholds...
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar MarkDuplicates -I /Volumes/T7/GTMBioinfo/aligned/C_MB014-3.chr12.sorted.bam -O /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-3.chr12.dedup.relaxed.bam -M /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-3.metrics.relaxed.txt --VALIDATION_STRINGENCY SILENT --REMOVE_DUPLICATES false
+00:34:37.713 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:34:37.740 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10365652568951519333.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10365652568951519333.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10365652568951519333.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10365652568951519333.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10365652568951519333.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:34:37.741 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:34:37.743 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3124003059875859370.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3124003059875859370.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3124003059875859370.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3124003059875859370.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3124003059875859370.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+[Sat Nov 15 00:34:37 CST 2025] MarkDuplicates --INPUT /Volumes/T7/GTMBioinfo/aligned/C_MB014-3.chr12.sorted.bam --OUTPUT /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-3.chr12.dedup.relaxed.bam --METRICS_FILE /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-3.metrics.relaxed.txt --REMOVE_DUPLICATES false --VALIDATION_STRINGENCY SILENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --FLOW_MODE false --FLOW_DUP_STRATEGY FLOW_QUALITY_SUM_STRATEGY --FLOW_USE_END_IN_UNPAIRED_READS false --FLOW_USE_UNPAIRED_CLIPPED_END false --FLOW_UNPAIRED_END_UNCERTAINTY 0 --FLOW_UNPAIRED_START_UNCERTAINTY 0 --FLOW_SKIP_FIRST_N_FLOWS 0 --FLOW_Q_IS_KNOWN_END false --FLOW_EFFECTIVE_QUALITY_THRESHOLD 15 --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Sat Nov 15 00:34:37 CST 2025] Executing as justin@Justins-Mini on Mac OS X 13.5 aarch64; OpenJDK 64-Bit Server VM 21.0.6+9-b895.97; Deflater: Jdk; Inflater: Jdk; Provider GCS is available; Picard version: Version:4.6.2.0
+INFO	2025-11-15 00:34:37	MarkDuplicates	Start of doWork freeMemory: 69847696; totalMemory: 98566144; maxMemory: 4294967296
+INFO	2025-11-15 00:34:37	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2025-11-15 00:34:37	MarkDuplicates	Will retain up to 15561475 data points before spilling to disk.
+00:34:37.824 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:37.826 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+WARNING	2025-11-15 00:34:37	AbstractOpticalDuplicateFinderCommandLineProgram	A field field parsed out of a read name was expected to contain an integer and did not. Read name: SRR21014914.265760. Cause: String 'SRR21014914.265760' did not start with a parsable number.
+INFO	2025-11-15 00:34:38	MarkDuplicates	Read 342842 records. 0 pairs never matched.
+INFO	2025-11-15 00:34:38	MarkDuplicates	After buildSortedReadEndLists freeMemory: 184430256; totalMemory: 371195904; maxMemory: 4294967296
+INFO	2025-11-15 00:34:38	MarkDuplicates	Will retain up to 134217728 duplicate indices before spilling to disk.
+INFO	2025-11-15 00:34:38	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2025-11-15 00:34:38	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2025-11-15 00:34:39	MarkDuplicates	Sorting list of duplicate records.
+INFO	2025-11-15 00:34:39	MarkDuplicates	After generateDuplicateIndexes freeMemory: 1013235992; totalMemory: 2118123520; maxMemory: 4294967296
+INFO	2025-11-15 00:34:39	MarkDuplicates	Marking 72595 records as duplicates.
+INFO	2025-11-15 00:34:39	MarkDuplicates	Found 0 optical duplicate clusters.
+00:34:39.042 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:39.042 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+INFO	2025-11-15 00:34:39	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+00:34:39.045 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+INFO	2025-11-15 00:34:43	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2025-11-15 00:34:43	MarkDuplicates	Duplicate Index cleanup.
+INFO	2025-11-15 00:34:43	MarkDuplicates	Getting Memory Stats.
+INFO	2025-11-15 00:34:43	MarkDuplicates	Before output close freeMemory: 103575728; totalMemory: 134217728; maxMemory: 4294967296
+INFO	2025-11-15 00:34:43	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2025-11-15 00:34:43	MarkDuplicates	After output close freeMemory: 90108696; totalMemory: 119537664; maxMemory: 4294967296
+[Sat Nov 15 00:34:43 CST 2025] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.10 minutes.
+Runtime.totalMemory()=119537664
+Tool returned:
+0
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar Mutect2 -R /Volumes/T7/GTMBioinfo/reference/Homo_sapiens.GRCh38.dna.chromosome.12.fa -I /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-3.chr12.dedup.relaxed.bam -tumor C_MB014-3 --initial-tumor-lod 2.0 --tumor-lod-to-emit 2.0 --max-reads-per-alignment-start 100 --min-base-quality-score 20 -O /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-3.unfiltered.relaxed.vcf.gz
+00:34:44.769 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:34:44.777 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression16182751520420052161.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression16182751520420052161.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression16182751520420052161.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression16182751520420052161.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression16182751520420052161.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:34:44.780 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:34:44.783 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3108193545323769037.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3108193545323769037.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3108193545323769037.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3108193545323769037.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3108193545323769037.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:34:44.847 INFO  Mutect2 - ------------------------------------------------------------
+00:34:44.849 INFO  Mutect2 - The Genome Analysis Toolkit (GATK) v4.6.2.0
+00:34:44.849 INFO  Mutect2 - For support and documentation go to https://software.broadinstitute.org/gatk/
+00:34:44.849 INFO  Mutect2 - Executing as justin@Justins-Mini on Mac OS X v13.5 aarch64
+00:34:44.849 INFO  Mutect2 - Java runtime: OpenJDK 64-Bit Server VM v21.0.6+9-b895.97
+00:34:44.849 INFO  Mutect2 - Start Date/Time: November 15, 2025, 12:34:44 a.m. CST
+00:34:44.849 INFO  Mutect2 - ------------------------------------------------------------
+00:34:44.849 INFO  Mutect2 - ------------------------------------------------------------
+00:34:44.850 INFO  Mutect2 - HTSJDK Version: 4.2.0
+00:34:44.850 INFO  Mutect2 - Picard Version: 3.4.0
+00:34:44.850 INFO  Mutect2 - Built for Spark Version: 3.5.0
+00:34:44.851 INFO  Mutect2 - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+00:34:44.851 INFO  Mutect2 - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+00:34:44.851 INFO  Mutect2 - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+00:34:44.851 INFO  Mutect2 - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+00:34:44.851 INFO  Mutect2 - Deflater: JdkDeflater
+00:34:44.851 INFO  Mutect2 - Inflater: JdkInflater
+00:34:44.851 INFO  Mutect2 - GCS max retries/reopens: 20
+00:34:44.852 INFO  Mutect2 - Requester pays: disabled
+00:34:44.852 INFO  Mutect2 - Initializing engine
+00:34:44.868 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:44.871 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:34:44.920 INFO  Mutect2 - Done initializing engine
+00:34:44.922 INFO  NativeLibraryLoader - Loading libgkl_utils.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_utils.dylib
+00:34:44.923 WARN  NativeLibraryLoader - Unable to load libgkl_utils.dylib from native/libgkl_utils.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils9468302496593871213.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils9468302496593871213.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils9468302496593871213.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils9468302496593871213.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils9468302496593871213.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:34:44.923 WARN  IntelSmithWaterman - Intel GKL Utils not loaded
+00:34:44.923 INFO  SmithWatermanAligner - AVX accelerated SmithWaterman implementation is not supported, falling back to the Java implementation
+00:34:44.931 INFO  NativeLibraryLoader - Loading libgkl_utils.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_utils.dylib
+00:34:44.932 WARN  NativeLibraryLoader - Unable to load libgkl_utils.dylib from native/libgkl_utils.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils1915233336517790159.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils1915233336517790159.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils1915233336517790159.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils1915233336517790159.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils1915233336517790159.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:34:44.932 WARN  IntelPairHmm - Intel GKL Utils not loaded
+00:34:44.932 INFO  PairHMM - OpenMP multi-threaded AVX-accelerated native PairHMM implementation is not supported
+00:34:44.932 INFO  NativeLibraryLoader - Loading libgkl_utils.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_utils.dylib
+00:34:44.932 WARN  NativeLibraryLoader - Unable to load libgkl_utils.dylib from native/libgkl_utils.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils7815755180029616579.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils7815755180029616579.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils7815755180029616579.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils7815755180029616579.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils7815755180029616579.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:34:44.933 WARN  IntelPairHmm - Intel GKL Utils not loaded
+00:34:44.933 WARN  PairHMM - ***WARNING: Machine does not have the AVX instruction set support needed for the accelerated AVX PairHmm. Falling back to the MUCH slower LOGLESS_CACHING implementation!
+00:34:44.935 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:34:44.948 INFO  ProgressMeter - Starting traversal
+00:34:44.948 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Regions Processed   Regions/Minute
+00:34:54.948 INFO  ProgressMeter -           12:6822642              0.2                 24680         148080.0
+00:35:04.971 INFO  ProgressMeter -          12:12317612              0.3                 45140         135264.4
+00:35:14.974 INFO  ProgressMeter -          12:18052211              0.5                 66270         132425.2
+00:35:25.093 INFO  ProgressMeter -          12:23511030              0.7                 86470         129236.5
+00:35:35.136 INFO  ProgressMeter -          12:29409247              0.8                108180         129329.7
+00:35:45.136 INFO  ProgressMeter -          12:35138051              1.0                129340         128936.0
+00:35:55.144 INFO  ProgressMeter -          12:42977406              1.2                158000         135050.4
+00:36:05.160 INFO  ProgressMeter -          12:48774502              1.3                179310         134127.1
+00:36:15.160 INFO  ProgressMeter -          12:57905144              1.5                213100         141732.8
+00:36:25.379 INFO  ProgressMeter -          12:63566120              1.7                234120         139869.2
+00:36:35.386 INFO  ProgressMeter -          12:69164991              1.8                254860         138463.2
+00:36:45.404 INFO  ProgressMeter -          12:74588423              2.0                275150         137054.2
+00:36:55.514 INFO  ProgressMeter -          12:79540037              2.2                293510         134878.9
+00:37:05.531 INFO  ProgressMeter -          12:84507751              2.3                312040         133176.8
+00:37:15.536 INFO  ProgressMeter -          12:90297319              2.5                333650         132938.9
+00:37:25.586 INFO  ProgressMeter -          12:96579083              2.7                356890         133302.2
+00:37:35.691 INFO  ProgressMeter -         12:102576323              2.8                379070         133207.2
+00:37:45.691 INFO  ProgressMeter -         12:109647050              3.0                404820         134385.3
+00:37:55.691 INFO  ProgressMeter -         12:118697095              3.2                437950         137761.3
+00:38:05.708 INFO  ProgressMeter -         12:127100668              3.3                468710         140080.7
+00:38:12.093 INFO  Mutect2 - 221629 read(s) filtered by: MappingQualityReadFilter 
+0 read(s) filtered by: MappingQualityAvailableReadFilter 
+0 read(s) filtered by: MappingQualityNotZeroReadFilter 
+0 read(s) filtered by: MappedReadFilter 
+0 read(s) filtered by: NotSecondaryAlignmentReadFilter 
+34705 read(s) filtered by: NotDuplicateReadFilter 
+0 read(s) filtered by: PassesVendorQualityCheckReadFilter 
+0 read(s) filtered by: NonChimericOriginalAlignmentReadFilter 
+0 read(s) filtered by: NonZeroReferenceLengthAlignmentReadFilter 
+0 read(s) filtered by: ReadLengthReadFilter 
+0 read(s) filtered by: GoodCigarReadFilter 
+0 read(s) filtered by: WellformedReadFilter 
+256334 total reads filtered out of 342842 reads processed
+00:38:12.094 INFO  ProgressMeter -         12:133275040              3.5                490830         142169.3
+00:38:12.094 INFO  ProgressMeter - Traversal complete. Processed 490830 total regions in 3.5 minutes.
+00:38:12.101 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:38:12.104 INFO  PairHMM - Total compute time in PairHMM computeLogLikelihoods() : 28.631213795
+00:38:12.104 INFO  SmithWatermanAligner - Total compute time in java Smith-Waterman : 84.61 sec
+00:38:12.106 INFO  Mutect2 - Shutting down engine
+[November 15, 2025, 12:38:12 a.m. CST] org.broadinstitute.hellbender.tools.walkers.mutect.Mutect2 done. Elapsed time: 3.46 minutes.
+Runtime.totalMemory()=497025024
+Tool returned:
+SUCCESS
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar FilterMutectCalls -R /Volumes/T7/GTMBioinfo/reference/Homo_sapiens.GRCh38.dna.chromosome.12.fa -V /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-3.unfiltered.relaxed.vcf.gz --min-median-mapping-quality 20 --min-median-base-quality 20 -O /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-3.filtered.relaxed.vcf.gz
+00:38:13.113 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:38:13.121 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression5071841393586435328.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression5071841393586435328.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression5071841393586435328.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression5071841393586435328.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression5071841393586435328.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:38:13.123 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:38:13.125 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6648026478535127884.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6648026478535127884.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6648026478535127884.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6648026478535127884.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6648026478535127884.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:38:13.217 INFO  FilterMutectCalls - ------------------------------------------------------------
+00:38:13.220 INFO  FilterMutectCalls - The Genome Analysis Toolkit (GATK) v4.6.2.0
+00:38:13.220 INFO  FilterMutectCalls - For support and documentation go to https://software.broadinstitute.org/gatk/
+00:38:13.220 INFO  FilterMutectCalls - Executing as justin@Justins-Mini on Mac OS X v13.5 aarch64
+00:38:13.220 INFO  FilterMutectCalls - Java runtime: OpenJDK 64-Bit Server VM v21.0.6+9-b895.97
+00:38:13.220 INFO  FilterMutectCalls - Start Date/Time: November 15, 2025, 12:38:13 a.m. CST
+00:38:13.220 INFO  FilterMutectCalls - ------------------------------------------------------------
+00:38:13.220 INFO  FilterMutectCalls - ------------------------------------------------------------
+00:38:13.221 INFO  FilterMutectCalls - HTSJDK Version: 4.2.0
+00:38:13.221 INFO  FilterMutectCalls - Picard Version: 3.4.0
+00:38:13.222 INFO  FilterMutectCalls - Built for Spark Version: 3.5.0
+00:38:13.232 INFO  FilterMutectCalls - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+00:38:13.232 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+00:38:13.232 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+00:38:13.232 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+00:38:13.232 INFO  FilterMutectCalls - Deflater: JdkDeflater
+00:38:13.232 INFO  FilterMutectCalls - Inflater: JdkInflater
+00:38:13.232 INFO  FilterMutectCalls - GCS max retries/reopens: 20
+00:38:13.232 INFO  FilterMutectCalls - Requester pays: disabled
+00:38:13.232 INFO  FilterMutectCalls - Initializing engine
+00:38:13.286 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:13.295 INFO  FeatureManager - Using codec VCFCodec to read file file:///Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-3.unfiltered.relaxed.vcf.gz
+00:38:13.300 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:13.300 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:13.305 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:13.308 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:13.308 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:13.311 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:13.314 INFO  FilterMutectCalls - Done initializing engine
+00:38:13.324 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:38:13.340 INFO  ProgressMeter - Starting traversal
+00:38:13.341 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+00:38:13.341 INFO  FilterMutectCalls - Starting pass 0 through the variants
+00:38:13.341 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:14.913 INFO  FilterMutectCalls - Finished pass 0 through the variants
+00:38:15.520 INFO  FilterMutectCalls - Starting pass 1 through the variants
+00:38:15.520 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:16.424 INFO  FilterMutectCalls - Finished pass 1 through the variants
+00:38:16.520 INFO  FilterMutectCalls - Starting pass 2 through the variants
+00:38:16.520 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:17.413 INFO  FilterMutectCalls - Finished pass 2 through the variants
+00:38:17.415 INFO  FilterMutectCalls - Starting pass 3 through the variants
+00:38:17.416 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:18.807 INFO  FilterMutectCalls - Finished pass 3 through the variants
+00:38:18.812 INFO  FilterMutectCalls - No variants filtered by: AllowAllVariantsVariantFilter
+00:38:18.813 INFO  FilterMutectCalls - 0 read(s) filtered by: AllowAllReadsReadFilter 
+
+00:38:18.813 INFO  ProgressMeter -         12:130566958              0.1                147444        1616710.5
+00:38:18.813 INFO  ProgressMeter - Traversal complete. Processed 147444 total variants in 0.1 minutes.
+00:38:18.816 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:38:18.820 INFO  FilterMutectCalls - Shutting down engine
+[November 15, 2025, 12:38:18 a.m. CST] org.broadinstitute.hellbender.tools.walkers.mutect.filtering.FilterMutectCalls done. Elapsed time: 0.10 minutes.
+Runtime.totalMemory()=549453824
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar SelectVariants -R /Volumes/T7/GTMBioinfo/reference/Homo_sapiens.GRCh38.dna.chromosome.12.fa -V /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-3.filtered.relaxed.vcf.gz -L 12:25245350-25250930 -O /Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-3.KRAS.relaxed.vcf.gz
+00:38:19.655 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:38:19.664 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression11065478406115310486.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression11065478406115310486.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression11065478406115310486.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression11065478406115310486.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression11065478406115310486.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:38:19.666 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:38:19.668 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1435392752471717107.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1435392752471717107.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1435392752471717107.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1435392752471717107.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1435392752471717107.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:38:19.723 INFO  SelectVariants - ------------------------------------------------------------
+00:38:19.725 INFO  SelectVariants - The Genome Analysis Toolkit (GATK) v4.6.2.0
+00:38:19.725 INFO  SelectVariants - For support and documentation go to https://software.broadinstitute.org/gatk/
+00:38:19.725 INFO  SelectVariants - Executing as justin@Justins-Mini on Mac OS X v13.5 aarch64
+00:38:19.725 INFO  SelectVariants - Java runtime: OpenJDK 64-Bit Server VM v21.0.6+9-b895.97
+00:38:19.725 INFO  SelectVariants - Start Date/Time: November 15, 2025, 12:38:19 a.m. CST
+00:38:19.725 INFO  SelectVariants - ------------------------------------------------------------
+00:38:19.726 INFO  SelectVariants - ------------------------------------------------------------
+00:38:19.726 INFO  SelectVariants - HTSJDK Version: 4.2.0
+00:38:19.726 INFO  SelectVariants - Picard Version: 3.4.0
+00:38:19.726 INFO  SelectVariants - Built for Spark Version: 3.5.0
+00:38:19.728 INFO  SelectVariants - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+00:38:19.728 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+00:38:19.728 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+00:38:19.729 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+00:38:19.729 INFO  SelectVariants - Deflater: JdkDeflater
+00:38:19.729 INFO  SelectVariants - Inflater: JdkInflater
+00:38:19.729 INFO  SelectVariants - GCS max retries/reopens: 20
+00:38:19.729 INFO  SelectVariants - Requester pays: disabled
+00:38:19.729 INFO  SelectVariants - Initializing engine
+00:38:19.787 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:19.797 INFO  FeatureManager - Using codec VCFCodec to read file file:///Volumes/T7/GTMBioinfo/variants_low_threshold/C_MB014-3.filtered.relaxed.vcf.gz
+00:38:19.803 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:19.803 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:19.808 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:19.812 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:19.812 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:19.816 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:19.822 INFO  IntervalArgumentCollection - Processing 5581 bp from intervals
+00:38:19.823 INFO  SelectVariants - Done initializing engine
+00:38:19.838 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:38:19.845 INFO  ProgressMeter - Starting traversal
+00:38:19.845 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+00:38:19.847 INFO  ProgressMeter -             unmapped              0.0                     0              0.0
+00:38:19.847 INFO  ProgressMeter - Traversal complete. Processed 0 total variants in 0.0 minutes.
+00:38:19.849 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:38:19.849 INFO  SelectVariants - Shutting down engine
+[November 15, 2025, 12:38:19 a.m. CST] org.broadinstitute.hellbender.tools.walkers.variantutils.SelectVariants done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=136314880
+✅ Finished C_MB014-3 in 223 seconds
+----------------------------------------
+🔬 Processing FFPE_C_MB014 with relaxed thresholds...
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar MarkDuplicates -I /Volumes/T7/GTMBioinfo/aligned/FFPE_C_MB014.chr12.sorted.bam -O /Volumes/T7/GTMBioinfo/variants_low_threshold/FFPE_C_MB014.chr12.dedup.relaxed.bam -M /Volumes/T7/GTMBioinfo/variants_low_threshold/FFPE_C_MB014.metrics.relaxed.txt --VALIDATION_STRINGENCY SILENT --REMOVE_DUPLICATES false
+00:38:20.710 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:38:20.735 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression2850993204482782163.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression2850993204482782163.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression2850993204482782163.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression2850993204482782163.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression2850993204482782163.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:38:20.736 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:38:20.738 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression14853163300936988303.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression14853163300936988303.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression14853163300936988303.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression14853163300936988303.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression14853163300936988303.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+[Sat Nov 15 00:38:20 CST 2025] MarkDuplicates --INPUT /Volumes/T7/GTMBioinfo/aligned/FFPE_C_MB014.chr12.sorted.bam --OUTPUT /Volumes/T7/GTMBioinfo/variants_low_threshold/FFPE_C_MB014.chr12.dedup.relaxed.bam --METRICS_FILE /Volumes/T7/GTMBioinfo/variants_low_threshold/FFPE_C_MB014.metrics.relaxed.txt --REMOVE_DUPLICATES false --VALIDATION_STRINGENCY SILENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --FLOW_MODE false --FLOW_DUP_STRATEGY FLOW_QUALITY_SUM_STRATEGY --FLOW_USE_END_IN_UNPAIRED_READS false --FLOW_USE_UNPAIRED_CLIPPED_END false --FLOW_UNPAIRED_END_UNCERTAINTY 0 --FLOW_UNPAIRED_START_UNCERTAINTY 0 --FLOW_SKIP_FIRST_N_FLOWS 0 --FLOW_Q_IS_KNOWN_END false --FLOW_EFFECTIVE_QUALITY_THRESHOLD 15 --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Sat Nov 15 00:38:20 CST 2025] Executing as justin@Justins-Mini on Mac OS X 13.5 aarch64; OpenJDK 64-Bit Server VM 21.0.6+9-b895.97; Deflater: Jdk; Inflater: Jdk; Provider GCS is available; Picard version: Version:4.6.2.0
+INFO	2025-11-15 00:38:20	MarkDuplicates	Start of doWork freeMemory: 76142272; totalMemory: 104857600; maxMemory: 4294967296
+INFO	2025-11-15 00:38:20	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2025-11-15 00:38:20	MarkDuplicates	Will retain up to 15561475 data points before spilling to disk.
+00:38:20.814 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:20.816 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+WARNING	2025-11-15 00:38:20	AbstractOpticalDuplicateFinderCommandLineProgram	A field field parsed out of a read name was expected to contain an integer and did not. Read name: SRR21015062.220953. Cause: String 'SRR21015062.220953' did not start with a parsable number.
+INFO	2025-11-15 00:38:21	MarkDuplicates	Read 330403 records. 0 pairs never matched.
+INFO	2025-11-15 00:38:21	MarkDuplicates	After buildSortedReadEndLists freeMemory: 346784296; totalMemory: 532676608; maxMemory: 4294967296
+INFO	2025-11-15 00:38:21	MarkDuplicates	Will retain up to 134217728 duplicate indices before spilling to disk.
+INFO	2025-11-15 00:38:21	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2025-11-15 00:38:21	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2025-11-15 00:38:22	MarkDuplicates	Sorting list of duplicate records.
+INFO	2025-11-15 00:38:22	MarkDuplicates	After generateDuplicateIndexes freeMemory: 918865632; totalMemory: 2023751680; maxMemory: 4294967296
+INFO	2025-11-15 00:38:22	MarkDuplicates	Marking 66764 records as duplicates.
+INFO	2025-11-15 00:38:22	MarkDuplicates	Found 0 optical duplicate clusters.
+00:38:22.037 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:22.037 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+INFO	2025-11-15 00:38:22	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+00:38:22.040 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+INFO	2025-11-15 00:38:26	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2025-11-15 00:38:26	MarkDuplicates	Duplicate Index cleanup.
+INFO	2025-11-15 00:38:26	MarkDuplicates	Getting Memory Stats.
+INFO	2025-11-15 00:38:26	MarkDuplicates	Before output close freeMemory: 109873448; totalMemory: 140509184; maxMemory: 4294967296
+INFO	2025-11-15 00:38:26	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2025-11-15 00:38:26	MarkDuplicates	After output close freeMemory: 90108592; totalMemory: 119537664; maxMemory: 4294967296
+[Sat Nov 15 00:38:26 CST 2025] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.09 minutes.
+Runtime.totalMemory()=119537664
+Tool returned:
+0
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar Mutect2 -R /Volumes/T7/GTMBioinfo/reference/Homo_sapiens.GRCh38.dna.chromosome.12.fa -I /Volumes/T7/GTMBioinfo/variants_low_threshold/FFPE_C_MB014.chr12.dedup.relaxed.bam -tumor FFPE_C_MB014 --initial-tumor-lod 2.0 --tumor-lod-to-emit 2.0 --max-reads-per-alignment-start 100 --min-base-quality-score 20 -O /Volumes/T7/GTMBioinfo/variants_low_threshold/FFPE_C_MB014.unfiltered.relaxed.vcf.gz
+00:38:27.467 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:38:27.477 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10505394598147390413.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10505394598147390413.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10505394598147390413.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10505394598147390413.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10505394598147390413.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:38:27.479 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:38:27.481 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression9198511146045959895.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression9198511146045959895.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression9198511146045959895.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression9198511146045959895.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression9198511146045959895.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:38:27.545 INFO  Mutect2 - ------------------------------------------------------------
+00:38:27.546 INFO  Mutect2 - The Genome Analysis Toolkit (GATK) v4.6.2.0
+00:38:27.546 INFO  Mutect2 - For support and documentation go to https://software.broadinstitute.org/gatk/
+00:38:27.546 INFO  Mutect2 - Executing as justin@Justins-Mini on Mac OS X v13.5 aarch64
+00:38:27.547 INFO  Mutect2 - Java runtime: OpenJDK 64-Bit Server VM v21.0.6+9-b895.97
+00:38:27.547 INFO  Mutect2 - Start Date/Time: November 15, 2025, 12:38:27 a.m. CST
+00:38:27.547 INFO  Mutect2 - ------------------------------------------------------------
+00:38:27.547 INFO  Mutect2 - ------------------------------------------------------------
+00:38:27.547 INFO  Mutect2 - HTSJDK Version: 4.2.0
+00:38:27.547 INFO  Mutect2 - Picard Version: 3.4.0
+00:38:27.547 INFO  Mutect2 - Built for Spark Version: 3.5.0
+00:38:27.549 INFO  Mutect2 - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+00:38:27.549 INFO  Mutect2 - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+00:38:27.549 INFO  Mutect2 - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+00:38:27.549 INFO  Mutect2 - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+00:38:27.549 INFO  Mutect2 - Deflater: JdkDeflater
+00:38:27.550 INFO  Mutect2 - Inflater: JdkInflater
+00:38:27.550 INFO  Mutect2 - GCS max retries/reopens: 20
+00:38:27.550 INFO  Mutect2 - Requester pays: disabled
+00:38:27.550 INFO  Mutect2 - Initializing engine
+00:38:27.568 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:27.570 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:38:27.615 INFO  Mutect2 - Done initializing engine
+00:38:27.619 INFO  NativeLibraryLoader - Loading libgkl_utils.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_utils.dylib
+00:38:27.619 WARN  NativeLibraryLoader - Unable to load libgkl_utils.dylib from native/libgkl_utils.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils12394317427863563307.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils12394317427863563307.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils12394317427863563307.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils12394317427863563307.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils12394317427863563307.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:38:27.619 WARN  IntelSmithWaterman - Intel GKL Utils not loaded
+00:38:27.620 INFO  SmithWatermanAligner - AVX accelerated SmithWaterman implementation is not supported, falling back to the Java implementation
+00:38:27.628 INFO  NativeLibraryLoader - Loading libgkl_utils.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_utils.dylib
+00:38:27.629 WARN  NativeLibraryLoader - Unable to load libgkl_utils.dylib from native/libgkl_utils.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils3738567244201210705.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils3738567244201210705.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils3738567244201210705.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils3738567244201210705.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils3738567244201210705.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:38:27.629 WARN  IntelPairHmm - Intel GKL Utils not loaded
+00:38:27.629 INFO  PairHMM - OpenMP multi-threaded AVX-accelerated native PairHMM implementation is not supported
+00:38:27.629 INFO  NativeLibraryLoader - Loading libgkl_utils.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_utils.dylib
+00:38:27.630 WARN  NativeLibraryLoader - Unable to load libgkl_utils.dylib from native/libgkl_utils.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils12811907258434517711.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils12811907258434517711.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils12811907258434517711.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils12811907258434517711.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils12811907258434517711.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:38:27.630 WARN  IntelPairHmm - Intel GKL Utils not loaded
+00:38:27.630 WARN  PairHMM - ***WARNING: Machine does not have the AVX instruction set support needed for the accelerated AVX PairHmm. Falling back to the MUCH slower LOGLESS_CACHING implementation!
+00:38:27.632 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:38:27.646 INFO  ProgressMeter - Starting traversal
+00:38:27.646 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Regions Processed   Regions/Minute
+00:38:37.654 INFO  ProgressMeter -           12:7274480              0.2                 26230         157269.9
+00:38:47.654 INFO  ProgressMeter -          12:12420874              0.3                 45320         135905.6
+00:38:57.746 INFO  ProgressMeter -          12:17478040              0.5                 63960         127495.0
+00:39:07.878 INFO  ProgressMeter -          12:22677354              0.7                 83360         124319.0
+00:39:17.879 INFO  ProgressMeter -          12:28656583              0.8                105360         125845.6
+00:39:27.883 INFO  ProgressMeter -          12:34832872              1.0                128140         127635.8
+00:39:37.920 INFO  ProgressMeter -          12:42848879              1.2                157340         134337.0
+00:39:47.922 INFO  ProgressMeter -          12:48923850              1.3                179680         134296.7
+00:39:57.944 INFO  ProgressMeter -          12:56962089              1.5                209280         139059.6
+00:40:07.958 INFO  ProgressMeter -          12:62347432              1.7                229290         137146.1
+00:40:17.958 INFO  ProgressMeter -          12:68091500              1.8                250460         136228.2
+00:40:27.959 INFO  ProgressMeter -          12:74421251              2.0                274070         136679.6
+00:40:38.041 INFO  ProgressMeter -          12:78843512              2.2                290440         133643.2
+00:40:48.044 INFO  ProgressMeter -          12:83415712              2.3                307520         131420.7
+00:40:58.053 INFO  ProgressMeter -          12:87832674              2.5                324090         129286.1
+00:41:08.052 INFO  ProgressMeter -          12:93845992              2.7                346270         129522.6
+00:41:18.062 INFO  ProgressMeter -         12:100131978              2.8                369440         130072.3
+00:41:28.094 INFO  ProgressMeter -         12:105779729              3.0                390170         129733.8
+00:41:38.138 INFO  ProgressMeter -         12:114274699              3.2                421100         132635.5
+00:41:48.138 INFO  ProgressMeter -         12:122928309              3.3                452800         135506.7
+00:41:58.140 INFO  ProgressMeter -         12:130805611              3.5                481260         137180.8
+00:42:00.162 INFO  Mutect2 - 213253 read(s) filtered by: MappingQualityReadFilter 
+0 read(s) filtered by: MappingQualityAvailableReadFilter 
+0 read(s) filtered by: MappingQualityNotZeroReadFilter 
+0 read(s) filtered by: MappedReadFilter 
+0 read(s) filtered by: NotSecondaryAlignmentReadFilter 
+31764 read(s) filtered by: NotDuplicateReadFilter 
+0 read(s) filtered by: PassesVendorQualityCheckReadFilter 
+0 read(s) filtered by: NonChimericOriginalAlignmentReadFilter 
+0 read(s) filtered by: NonZeroReferenceLengthAlignmentReadFilter 
+1 read(s) filtered by: ReadLengthReadFilter 
+0 read(s) filtered by: GoodCigarReadFilter 
+0 read(s) filtered by: WellformedReadFilter 
+245018 total reads filtered out of 330403 reads processed
+00:42:00.162 INFO  ProgressMeter -         12:133272316              3.5                490019         138347.9
+00:42:00.162 INFO  ProgressMeter - Traversal complete. Processed 490019 total regions in 3.5 minutes.
+00:42:00.169 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:42:00.174 INFO  PairHMM - Total compute time in PairHMM computeLogLikelihoods() : 30.491457033000003
+00:42:00.174 INFO  SmithWatermanAligner - Total compute time in java Smith-Waterman : 86.26 sec
+00:42:00.175 INFO  Mutect2 - Shutting down engine
+[November 15, 2025, 12:42:00 a.m. CST] org.broadinstitute.hellbender.tools.walkers.mutect.Mutect2 done. Elapsed time: 3.55 minutes.
+Runtime.totalMemory()=484442112
+Tool returned:
+SUCCESS
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar FilterMutectCalls -R /Volumes/T7/GTMBioinfo/reference/Homo_sapiens.GRCh38.dna.chromosome.12.fa -V /Volumes/T7/GTMBioinfo/variants_low_threshold/FFPE_C_MB014.unfiltered.relaxed.vcf.gz --min-median-mapping-quality 20 --min-median-base-quality 20 -O /Volumes/T7/GTMBioinfo/variants_low_threshold/FFPE_C_MB014.filtered.relaxed.vcf.gz
+00:42:01.549 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:42:01.563 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression4166841021941800251.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression4166841021941800251.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression4166841021941800251.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression4166841021941800251.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression4166841021941800251.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:42:01.567 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:42:01.571 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression16126714847327146853.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression16126714847327146853.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression16126714847327146853.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression16126714847327146853.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression16126714847327146853.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:42:01.647 INFO  FilterMutectCalls - ------------------------------------------------------------
+00:42:01.655 INFO  FilterMutectCalls - The Genome Analysis Toolkit (GATK) v4.6.2.0
+00:42:01.655 INFO  FilterMutectCalls - For support and documentation go to https://software.broadinstitute.org/gatk/
+00:42:01.655 INFO  FilterMutectCalls - Executing as justin@Justins-Mini on Mac OS X v13.5 aarch64
+00:42:01.655 INFO  FilterMutectCalls - Java runtime: OpenJDK 64-Bit Server VM v21.0.6+9-b895.97
+00:42:01.655 INFO  FilterMutectCalls - Start Date/Time: November 15, 2025, 12:42:01 a.m. CST
+00:42:01.655 INFO  FilterMutectCalls - ------------------------------------------------------------
+00:42:01.656 INFO  FilterMutectCalls - ------------------------------------------------------------
+00:42:01.656 INFO  FilterMutectCalls - HTSJDK Version: 4.2.0
+00:42:01.656 INFO  FilterMutectCalls - Picard Version: 3.4.0
+00:42:01.656 INFO  FilterMutectCalls - Built for Spark Version: 3.5.0
+00:42:01.657 INFO  FilterMutectCalls - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+00:42:01.658 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+00:42:01.658 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+00:42:01.658 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+00:42:01.658 INFO  FilterMutectCalls - Deflater: JdkDeflater
+00:42:01.658 INFO  FilterMutectCalls - Inflater: JdkInflater
+00:42:01.658 INFO  FilterMutectCalls - GCS max retries/reopens: 20
+00:42:01.658 INFO  FilterMutectCalls - Requester pays: disabled
+00:42:01.659 INFO  FilterMutectCalls - Initializing engine
+00:42:01.727 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:01.737 INFO  FeatureManager - Using codec VCFCodec to read file file:///Volumes/T7/GTMBioinfo/variants_low_threshold/FFPE_C_MB014.unfiltered.relaxed.vcf.gz
+00:42:01.744 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:01.744 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:01.752 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:01.757 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:01.757 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:01.760 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:01.765 INFO  FilterMutectCalls - Done initializing engine
+00:42:01.779 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:42:01.803 INFO  ProgressMeter - Starting traversal
+00:42:01.803 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+00:42:01.803 INFO  FilterMutectCalls - Starting pass 0 through the variants
+00:42:01.805 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:03.598 INFO  FilterMutectCalls - Finished pass 0 through the variants
+00:42:04.202 INFO  FilterMutectCalls - Starting pass 1 through the variants
+00:42:04.203 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:05.358 INFO  FilterMutectCalls - Finished pass 1 through the variants
+00:42:05.455 INFO  FilterMutectCalls - Starting pass 2 through the variants
+00:42:05.456 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:06.489 INFO  FilterMutectCalls - Finished pass 2 through the variants
+00:42:06.492 INFO  FilterMutectCalls - Starting pass 3 through the variants
+00:42:06.492 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:07.987 INFO  FilterMutectCalls - Finished pass 3 through the variants
+00:42:07.992 INFO  FilterMutectCalls - No variants filtered by: AllowAllVariantsVariantFilter
+00:42:07.993 INFO  FilterMutectCalls - 0 read(s) filtered by: AllowAllReadsReadFilter 
+
+00:42:07.993 INFO  ProgressMeter -         12:133093625              0.1                154080        1493505.7
+00:42:07.994 INFO  ProgressMeter - Traversal complete. Processed 154080 total variants in 0.1 minutes.
+00:42:07.997 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:42:08.000 INFO  FilterMutectCalls - Shutting down engine
+[November 15, 2025, 12:42:08 a.m. CST] org.broadinstitute.hellbender.tools.walkers.mutect.filtering.FilterMutectCalls done. Elapsed time: 0.11 minutes.
+Runtime.totalMemory()=683671552
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar SelectVariants -R /Volumes/T7/GTMBioinfo/reference/Homo_sapiens.GRCh38.dna.chromosome.12.fa -V /Volumes/T7/GTMBioinfo/variants_low_threshold/FFPE_C_MB014.filtered.relaxed.vcf.gz -L 12:25245350-25250930 -O /Volumes/T7/GTMBioinfo/variants_low_threshold/FFPE_C_MB014.KRAS.relaxed.vcf.gz
+00:42:08.876 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:42:08.884 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression16771514970398148647.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression16771514970398148647.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression16771514970398148647.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression16771514970398148647.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression16771514970398148647.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:42:08.887 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:42:08.889 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1413284667566103832.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1413284667566103832.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1413284667566103832.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1413284667566103832.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1413284667566103832.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:42:08.944 INFO  SelectVariants - ------------------------------------------------------------
+00:42:08.946 INFO  SelectVariants - The Genome Analysis Toolkit (GATK) v4.6.2.0
+00:42:08.946 INFO  SelectVariants - For support and documentation go to https://software.broadinstitute.org/gatk/
+00:42:08.946 INFO  SelectVariants - Executing as justin@Justins-Mini on Mac OS X v13.5 aarch64
+00:42:08.946 INFO  SelectVariants - Java runtime: OpenJDK 64-Bit Server VM v21.0.6+9-b895.97
+00:42:08.946 INFO  SelectVariants - Start Date/Time: November 15, 2025, 12:42:08 a.m. CST
+00:42:08.946 INFO  SelectVariants - ------------------------------------------------------------
+00:42:08.946 INFO  SelectVariants - ------------------------------------------------------------
+00:42:08.947 INFO  SelectVariants - HTSJDK Version: 4.2.0
+00:42:08.947 INFO  SelectVariants - Picard Version: 3.4.0
+00:42:08.947 INFO  SelectVariants - Built for Spark Version: 3.5.0
+00:42:08.948 INFO  SelectVariants - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+00:42:08.948 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+00:42:08.948 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+00:42:08.948 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+00:42:08.948 INFO  SelectVariants - Deflater: JdkDeflater
+00:42:08.948 INFO  SelectVariants - Inflater: JdkInflater
+00:42:08.948 INFO  SelectVariants - GCS max retries/reopens: 20
+00:42:08.948 INFO  SelectVariants - Requester pays: disabled
+00:42:08.948 INFO  SelectVariants - Initializing engine
+00:42:09.004 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:09.012 INFO  FeatureManager - Using codec VCFCodec to read file file:///Volumes/T7/GTMBioinfo/variants_low_threshold/FFPE_C_MB014.filtered.relaxed.vcf.gz
+00:42:09.018 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:09.018 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:09.022 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:09.027 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:09.027 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:09.028 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:09.032 INFO  IntervalArgumentCollection - Processing 5581 bp from intervals
+00:42:09.033 INFO  SelectVariants - Done initializing engine
+00:42:09.047 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:42:09.053 INFO  ProgressMeter - Starting traversal
+00:42:09.053 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+00:42:09.055 INFO  ProgressMeter -             unmapped              0.0                     0              0.0
+00:42:09.055 INFO  ProgressMeter - Traversal complete. Processed 0 total variants in 0.0 minutes.
+00:42:09.057 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:42:09.058 INFO  SelectVariants - Shutting down engine
+[November 15, 2025, 12:42:09 a.m. CST] org.broadinstitute.hellbender.tools.walkers.variantutils.SelectVariants done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=121634816
+✅ Finished FFPE_C_MB014 in 230 seconds
+----------------------------------------
+🔬 Processing PBMC_C_MB014 with relaxed thresholds...
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar MarkDuplicates -I /Volumes/T7/GTMBioinfo/aligned/PBMC_C_MB014.chr12.sorted.bam -O /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014.chr12.dedup.relaxed.bam -M /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014.metrics.relaxed.txt --VALIDATION_STRINGENCY SILENT --REMOVE_DUPLICATES false
+00:42:10.079 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:42:10.114 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression12158385338655807490.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression12158385338655807490.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression12158385338655807490.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression12158385338655807490.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression12158385338655807490.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:42:10.115 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:42:10.117 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10935209890724705851.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10935209890724705851.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10935209890724705851.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10935209890724705851.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10935209890724705851.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+[Sat Nov 15 00:42:10 CST 2025] MarkDuplicates --INPUT /Volumes/T7/GTMBioinfo/aligned/PBMC_C_MB014.chr12.sorted.bam --OUTPUT /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014.chr12.dedup.relaxed.bam --METRICS_FILE /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014.metrics.relaxed.txt --REMOVE_DUPLICATES false --VALIDATION_STRINGENCY SILENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --FLOW_MODE false --FLOW_DUP_STRATEGY FLOW_QUALITY_SUM_STRATEGY --FLOW_USE_END_IN_UNPAIRED_READS false --FLOW_USE_UNPAIRED_CLIPPED_END false --FLOW_UNPAIRED_END_UNCERTAINTY 0 --FLOW_UNPAIRED_START_UNCERTAINTY 0 --FLOW_SKIP_FIRST_N_FLOWS 0 --FLOW_Q_IS_KNOWN_END false --FLOW_EFFECTIVE_QUALITY_THRESHOLD 15 --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Sat Nov 15 00:42:10 CST 2025] Executing as justin@Justins-Mini on Mac OS X 13.5 aarch64; OpenJDK 64-Bit Server VM 21.0.6+9-b895.97; Deflater: Jdk; Inflater: Jdk; Provider GCS is available; Picard version: Version:4.6.2.0
+INFO	2025-11-15 00:42:10	MarkDuplicates	Start of doWork freeMemory: 69846936; totalMemory: 98566144; maxMemory: 4294967296
+INFO	2025-11-15 00:42:10	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2025-11-15 00:42:10	MarkDuplicates	Will retain up to 15561475 data points before spilling to disk.
+00:42:10.215 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:10.218 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+WARNING	2025-11-15 00:42:10	AbstractOpticalDuplicateFinderCommandLineProgram	A field field parsed out of a read name was expected to contain an integer and did not. Read name: SRR21015019.457247. Cause: String 'SRR21015019.457247' did not start with a parsable number.
+INFO	2025-11-15 00:42:11	MarkDuplicates	Read 360781 records. 0 pairs never matched.
+INFO	2025-11-15 00:42:11	MarkDuplicates	After buildSortedReadEndLists freeMemory: 258894952; totalMemory: 446693376; maxMemory: 4294967296
+INFO	2025-11-15 00:42:11	MarkDuplicates	Will retain up to 134217728 duplicate indices before spilling to disk.
+INFO	2025-11-15 00:42:11	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2025-11-15 00:42:11	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2025-11-15 00:42:11	MarkDuplicates	Sorting list of duplicate records.
+INFO	2025-11-15 00:42:11	MarkDuplicates	After generateDuplicateIndexes freeMemory: 918852488; totalMemory: 2023751680; maxMemory: 4294967296
+INFO	2025-11-15 00:42:11	MarkDuplicates	Marking 77732 records as duplicates.
+INFO	2025-11-15 00:42:11	MarkDuplicates	Found 0 optical duplicate clusters.
+00:42:11.591 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:11.591 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+INFO	2025-11-15 00:42:11	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+00:42:11.597 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+INFO	2025-11-15 00:42:16	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2025-11-15 00:42:16	MarkDuplicates	Duplicate Index cleanup.
+INFO	2025-11-15 00:42:16	MarkDuplicates	Getting Memory Stats.
+INFO	2025-11-15 00:42:16	MarkDuplicates	Before output close freeMemory: 115148552; totalMemory: 146800640; maxMemory: 4294967296
+INFO	2025-11-15 00:42:16	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2025-11-15 00:42:16	MarkDuplicates	After output close freeMemory: 96387272; totalMemory: 125829120; maxMemory: 4294967296
+[Sat Nov 15 00:42:16 CST 2025] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.10 minutes.
+Runtime.totalMemory()=125829120
+Tool returned:
+0
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar Mutect2 -R /Volumes/T7/GTMBioinfo/reference/Homo_sapiens.GRCh38.dna.chromosome.12.fa -I /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014.chr12.dedup.relaxed.bam -tumor PBMC_C_MB014 --initial-tumor-lod 2.0 --tumor-lod-to-emit 2.0 --max-reads-per-alignment-start 100 --min-base-quality-score 20 -O /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014.unfiltered.relaxed.vcf.gz
+00:42:17.424 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:42:17.432 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression5944904358975338842.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression5944904358975338842.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression5944904358975338842.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression5944904358975338842.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression5944904358975338842.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:42:17.434 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:42:17.436 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression13617066474322548424.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression13617066474322548424.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression13617066474322548424.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression13617066474322548424.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression13617066474322548424.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:42:17.494 INFO  Mutect2 - ------------------------------------------------------------
+00:42:17.495 INFO  Mutect2 - The Genome Analysis Toolkit (GATK) v4.6.2.0
+00:42:17.495 INFO  Mutect2 - For support and documentation go to https://software.broadinstitute.org/gatk/
+00:42:17.496 INFO  Mutect2 - Executing as justin@Justins-Mini on Mac OS X v13.5 aarch64
+00:42:17.496 INFO  Mutect2 - Java runtime: OpenJDK 64-Bit Server VM v21.0.6+9-b895.97
+00:42:17.496 INFO  Mutect2 - Start Date/Time: November 15, 2025, 12:42:17 a.m. CST
+00:42:17.496 INFO  Mutect2 - ------------------------------------------------------------
+00:42:17.496 INFO  Mutect2 - ------------------------------------------------------------
+00:42:17.496 INFO  Mutect2 - HTSJDK Version: 4.2.0
+00:42:17.496 INFO  Mutect2 - Picard Version: 3.4.0
+00:42:17.496 INFO  Mutect2 - Built for Spark Version: 3.5.0
+00:42:17.498 INFO  Mutect2 - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+00:42:17.498 INFO  Mutect2 - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+00:42:17.498 INFO  Mutect2 - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+00:42:17.498 INFO  Mutect2 - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+00:42:17.498 INFO  Mutect2 - Deflater: JdkDeflater
+00:42:17.498 INFO  Mutect2 - Inflater: JdkInflater
+00:42:17.498 INFO  Mutect2 - GCS max retries/reopens: 20
+00:42:17.499 INFO  Mutect2 - Requester pays: disabled
+00:42:17.499 INFO  Mutect2 - Initializing engine
+00:42:17.515 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:17.517 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:42:17.561 INFO  Mutect2 - Done initializing engine
+00:42:17.564 INFO  NativeLibraryLoader - Loading libgkl_utils.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_utils.dylib
+00:42:17.565 WARN  NativeLibraryLoader - Unable to load libgkl_utils.dylib from native/libgkl_utils.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils4514676634031443900.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils4514676634031443900.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils4514676634031443900.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils4514676634031443900.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils4514676634031443900.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:42:17.565 WARN  IntelSmithWaterman - Intel GKL Utils not loaded
+00:42:17.565 INFO  SmithWatermanAligner - AVX accelerated SmithWaterman implementation is not supported, falling back to the Java implementation
+00:42:17.573 INFO  NativeLibraryLoader - Loading libgkl_utils.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_utils.dylib
+00:42:17.573 WARN  NativeLibraryLoader - Unable to load libgkl_utils.dylib from native/libgkl_utils.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils3061293378807745134.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils3061293378807745134.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils3061293378807745134.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils3061293378807745134.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils3061293378807745134.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:42:17.574 WARN  IntelPairHmm - Intel GKL Utils not loaded
+00:42:17.574 INFO  PairHMM - OpenMP multi-threaded AVX-accelerated native PairHMM implementation is not supported
+00:42:17.574 INFO  NativeLibraryLoader - Loading libgkl_utils.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_utils.dylib
+00:42:17.574 WARN  NativeLibraryLoader - Unable to load libgkl_utils.dylib from native/libgkl_utils.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils18195519232656287171.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils18195519232656287171.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils18195519232656287171.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils18195519232656287171.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils18195519232656287171.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:42:17.574 WARN  IntelPairHmm - Intel GKL Utils not loaded
+00:42:17.574 WARN  PairHMM - ***WARNING: Machine does not have the AVX instruction set support needed for the accelerated AVX PairHmm. Falling back to the MUCH slower LOGLESS_CACHING implementation!
+00:42:17.577 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:42:17.588 INFO  ProgressMeter - Starting traversal
+00:42:17.589 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Regions Processed   Regions/Minute
+00:42:27.642 INFO  ProgressMeter -           12:7371986              0.2                 26630         158953.4
+00:42:37.719 INFO  ProgressMeter -          12:12061012              0.3                 44220         131803.3
+00:42:47.721 INFO  ProgressMeter -          12:17507287              0.5                 64310         128060.8
+00:42:57.769 INFO  ProgressMeter -          12:22711258              0.7                 83720         125017.4
+00:43:07.778 INFO  ProgressMeter -          12:28274713              0.8                104230         124605.0
+00:43:17.782 INFO  ProgressMeter -          12:33663208              1.0                124210         123811.7
+00:43:27.792 INFO  ProgressMeter -          12:40906007              1.2                150800         128883.4
+00:43:37.793 INFO  ProgressMeter -          12:46385846              1.3                171020         127938.8
+00:43:47.801 INFO  ProgressMeter -          12:52856791              1.5                195000         129694.5
+00:43:57.893 INFO  ProgressMeter -          12:59156074              1.7                218320         130595.0
+00:44:07.937 INFO  ProgressMeter -          12:63679313              1.8                235230         127902.6
+00:44:17.969 INFO  ProgressMeter -          12:68646533              2.0                253650         126424.7
+00:44:27.975 INFO  ProgressMeter -          12:74135649              2.2                274160         126160.8
+00:44:37.987 INFO  ProgressMeter -          12:78747483              2.3                291340         124506.0
+00:44:47.991 INFO  ProgressMeter -          12:83120153              2.5                307550         122691.2
+00:44:57.991 INFO  ProgressMeter -          12:88264574              2.7                326770         122231.6
+00:45:07.992 INFO  ProgressMeter -          12:93973154              2.8                347940         122511.9
+00:45:18.006 INFO  ProgressMeter -          12:99096791              3.0                366910         122020.7
+00:45:28.006 INFO  ProgressMeter -         12:104307586              3.2                386350         121738.1
+00:45:38.009 INFO  ProgressMeter -         12:110885216              3.3                410310         122835.0
+00:45:48.036 INFO  ProgressMeter -         12:119245723              3.5                440950         125718.1
+00:45:58.064 INFO  ProgressMeter -         12:127071597              3.7                469830         127860.0
+00:46:06.730 INFO  Mutect2 - 235397 read(s) filtered by: MappingQualityReadFilter 
+0 read(s) filtered by: MappingQualityAvailableReadFilter 
+0 read(s) filtered by: MappingQualityNotZeroReadFilter 
+0 read(s) filtered by: MappedReadFilter 
+0 read(s) filtered by: NotSecondaryAlignmentReadFilter 
+36746 read(s) filtered by: NotDuplicateReadFilter 
+0 read(s) filtered by: PassesVendorQualityCheckReadFilter 
+0 read(s) filtered by: NonChimericOriginalAlignmentReadFilter 
+0 read(s) filtered by: NonZeroReferenceLengthAlignmentReadFilter 
+0 read(s) filtered by: ReadLengthReadFilter 
+0 read(s) filtered by: GoodCigarReadFilter 
+0 read(s) filtered by: WellformedReadFilter 
+272143 total reads filtered out of 360781 reads processed
+00:46:06.730 INFO  ProgressMeter -         12:133273757              3.8                492165         128872.2
+00:46:06.730 INFO  ProgressMeter - Traversal complete. Processed 492165 total regions in 3.8 minutes.
+00:46:06.736 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:46:06.739 INFO  PairHMM - Total compute time in PairHMM computeLogLikelihoods() : 31.942543129
+00:46:06.740 INFO  SmithWatermanAligner - Total compute time in java Smith-Waterman : 96.28 sec
+00:46:06.741 INFO  Mutect2 - Shutting down engine
+[November 15, 2025, 12:46:06 a.m. CST] org.broadinstitute.hellbender.tools.walkers.mutect.Mutect2 done. Elapsed time: 3.82 minutes.
+Runtime.totalMemory()=446693376
+Tool returned:
+SUCCESS
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar FilterMutectCalls -R /Volumes/T7/GTMBioinfo/reference/Homo_sapiens.GRCh38.dna.chromosome.12.fa -V /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014.unfiltered.relaxed.vcf.gz --min-median-mapping-quality 20 --min-median-base-quality 20 -O /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014.filtered.relaxed.vcf.gz
+00:46:07.644 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:46:07.652 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression14915140068265651501.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression14915140068265651501.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression14915140068265651501.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression14915140068265651501.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression14915140068265651501.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:46:07.654 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:46:07.657 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression14060241729858929068.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression14060241729858929068.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression14060241729858929068.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression14060241729858929068.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression14060241729858929068.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:46:07.712 INFO  FilterMutectCalls - ------------------------------------------------------------
+00:46:07.714 INFO  FilterMutectCalls - The Genome Analysis Toolkit (GATK) v4.6.2.0
+00:46:07.714 INFO  FilterMutectCalls - For support and documentation go to https://software.broadinstitute.org/gatk/
+00:46:07.714 INFO  FilterMutectCalls - Executing as justin@Justins-Mini on Mac OS X v13.5 aarch64
+00:46:07.714 INFO  FilterMutectCalls - Java runtime: OpenJDK 64-Bit Server VM v21.0.6+9-b895.97
+00:46:07.714 INFO  FilterMutectCalls - Start Date/Time: November 15, 2025, 12:46:07 a.m. CST
+00:46:07.714 INFO  FilterMutectCalls - ------------------------------------------------------------
+00:46:07.714 INFO  FilterMutectCalls - ------------------------------------------------------------
+00:46:07.715 INFO  FilterMutectCalls - HTSJDK Version: 4.2.0
+00:46:07.715 INFO  FilterMutectCalls - Picard Version: 3.4.0
+00:46:07.715 INFO  FilterMutectCalls - Built for Spark Version: 3.5.0
+00:46:07.716 INFO  FilterMutectCalls - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+00:46:07.716 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+00:46:07.716 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+00:46:07.716 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+00:46:07.717 INFO  FilterMutectCalls - Deflater: JdkDeflater
+00:46:07.717 INFO  FilterMutectCalls - Inflater: JdkInflater
+00:46:07.717 INFO  FilterMutectCalls - GCS max retries/reopens: 20
+00:46:07.717 INFO  FilterMutectCalls - Requester pays: disabled
+00:46:07.717 INFO  FilterMutectCalls - Initializing engine
+00:46:07.782 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:07.792 INFO  FeatureManager - Using codec VCFCodec to read file file:///Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014.unfiltered.relaxed.vcf.gz
+00:46:07.799 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:07.799 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:07.805 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:07.809 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:07.809 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:07.812 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:07.816 INFO  FilterMutectCalls - Done initializing engine
+00:46:07.826 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:46:07.845 INFO  ProgressMeter - Starting traversal
+00:46:07.845 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+00:46:07.845 INFO  FilterMutectCalls - Starting pass 0 through the variants
+00:46:07.846 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:09.339 INFO  FilterMutectCalls - Finished pass 0 through the variants
+00:46:09.913 INFO  FilterMutectCalls - Starting pass 1 through the variants
+00:46:09.913 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:10.927 INFO  FilterMutectCalls - Finished pass 1 through the variants
+00:46:11.068 INFO  FilterMutectCalls - Starting pass 2 through the variants
+00:46:11.068 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:12.026 INFO  FilterMutectCalls - Finished pass 2 through the variants
+00:46:12.029 INFO  FilterMutectCalls - Starting pass 3 through the variants
+00:46:12.029 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:13.794 INFO  FilterMutectCalls - Finished pass 3 through the variants
+00:46:13.809 INFO  FilterMutectCalls - No variants filtered by: AllowAllVariantsVariantFilter
+00:46:13.810 INFO  FilterMutectCalls - 0 read(s) filtered by: AllowAllReadsReadFilter 
+
+00:46:13.810 INFO  ProgressMeter -         12:132957232              0.1                160128        1610675.6
+00:46:13.810 INFO  ProgressMeter - Traversal complete. Processed 160128 total variants in 0.1 minutes.
+00:46:13.814 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:46:13.818 INFO  FilterMutectCalls - Shutting down engine
+[November 15, 2025, 12:46:13 a.m. CST] org.broadinstitute.hellbender.tools.walkers.mutect.filtering.FilterMutectCalls done. Elapsed time: 0.10 minutes.
+Runtime.totalMemory()=570425344
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar SelectVariants -R /Volumes/T7/GTMBioinfo/reference/Homo_sapiens.GRCh38.dna.chromosome.12.fa -V /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014.filtered.relaxed.vcf.gz -L 12:25245350-25250930 -O /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014.KRAS.relaxed.vcf.gz
+00:46:14.767 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:46:14.776 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression4819808471997586304.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression4819808471997586304.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression4819808471997586304.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression4819808471997586304.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression4819808471997586304.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:46:14.778 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:46:14.781 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3578997992551571874.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3578997992551571874.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3578997992551571874.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3578997992551571874.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression3578997992551571874.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:46:14.844 INFO  SelectVariants - ------------------------------------------------------------
+00:46:14.846 INFO  SelectVariants - The Genome Analysis Toolkit (GATK) v4.6.2.0
+00:46:14.846 INFO  SelectVariants - For support and documentation go to https://software.broadinstitute.org/gatk/
+00:46:14.846 INFO  SelectVariants - Executing as justin@Justins-Mini on Mac OS X v13.5 aarch64
+00:46:14.846 INFO  SelectVariants - Java runtime: OpenJDK 64-Bit Server VM v21.0.6+9-b895.97
+00:46:14.846 INFO  SelectVariants - Start Date/Time: November 15, 2025, 12:46:14 a.m. CST
+00:46:14.846 INFO  SelectVariants - ------------------------------------------------------------
+00:46:14.846 INFO  SelectVariants - ------------------------------------------------------------
+00:46:14.847 INFO  SelectVariants - HTSJDK Version: 4.2.0
+00:46:14.847 INFO  SelectVariants - Picard Version: 3.4.0
+00:46:14.847 INFO  SelectVariants - Built for Spark Version: 3.5.0
+00:46:14.849 INFO  SelectVariants - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+00:46:14.854 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+00:46:14.854 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+00:46:14.855 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+00:46:14.855 INFO  SelectVariants - Deflater: JdkDeflater
+00:46:14.855 INFO  SelectVariants - Inflater: JdkInflater
+00:46:14.855 INFO  SelectVariants - GCS max retries/reopens: 20
+00:46:14.855 INFO  SelectVariants - Requester pays: disabled
+00:46:14.855 INFO  SelectVariants - Initializing engine
+00:46:14.927 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:14.936 INFO  FeatureManager - Using codec VCFCodec to read file file:///Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014.filtered.relaxed.vcf.gz
+00:46:14.942 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:14.942 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:14.947 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:14.953 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:14.953 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:14.959 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:14.965 INFO  IntervalArgumentCollection - Processing 5581 bp from intervals
+00:46:14.966 INFO  SelectVariants - Done initializing engine
+00:46:14.983 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:46:14.991 INFO  ProgressMeter - Starting traversal
+00:46:14.991 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+00:46:14.993 INFO  ProgressMeter -             unmapped              0.0                     0              0.0
+00:46:14.993 INFO  ProgressMeter - Traversal complete. Processed 0 total variants in 0.0 minutes.
+00:46:14.995 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:46:14.997 INFO  SelectVariants - Shutting down engine
+[November 15, 2025, 12:46:14 a.m. CST] org.broadinstitute.hellbender.tools.walkers.variantutils.SelectVariants done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=117440512
+✅ Finished PBMC_C_MB014 in 246 seconds
+----------------------------------------
+🔬 Processing PBMC_C_MB014-2 with relaxed thresholds...
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar MarkDuplicates -I /Volumes/T7/GTMBioinfo/aligned/PBMC_C_MB014-2.chr12.sorted.bam -O /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014-2.chr12.dedup.relaxed.bam -M /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014-2.metrics.relaxed.txt --VALIDATION_STRINGENCY SILENT --REMOVE_DUPLICATES false
+00:46:15.967 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:46:15.998 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression11207622606078618702.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression11207622606078618702.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression11207622606078618702.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression11207622606078618702.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression11207622606078618702.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:46:15.999 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:46:16.001 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10065619415366888929.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10065619415366888929.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10065619415366888929.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10065619415366888929.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10065619415366888929.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+[Sat Nov 15 00:46:16 CST 2025] MarkDuplicates --INPUT /Volumes/T7/GTMBioinfo/aligned/PBMC_C_MB014-2.chr12.sorted.bam --OUTPUT /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014-2.chr12.dedup.relaxed.bam --METRICS_FILE /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014-2.metrics.relaxed.txt --REMOVE_DUPLICATES false --VALIDATION_STRINGENCY SILENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --FLOW_MODE false --FLOW_DUP_STRATEGY FLOW_QUALITY_SUM_STRATEGY --FLOW_USE_END_IN_UNPAIRED_READS false --FLOW_USE_UNPAIRED_CLIPPED_END false --FLOW_UNPAIRED_END_UNCERTAINTY 0 --FLOW_UNPAIRED_START_UNCERTAINTY 0 --FLOW_SKIP_FIRST_N_FLOWS 0 --FLOW_Q_IS_KNOWN_END false --FLOW_EFFECTIVE_QUALITY_THRESHOLD 15 --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Sat Nov 15 00:46:16 CST 2025] Executing as justin@Justins-Mini on Mac OS X 13.5 aarch64; OpenJDK 64-Bit Server VM 21.0.6+9-b895.97; Deflater: Jdk; Inflater: Jdk; Provider GCS is available; Picard version: Version:4.6.2.0
+INFO	2025-11-15 00:46:16	MarkDuplicates	Start of doWork freeMemory: 69847056; totalMemory: 98566144; maxMemory: 4294967296
+INFO	2025-11-15 00:46:16	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2025-11-15 00:46:16	MarkDuplicates	Will retain up to 15561475 data points before spilling to disk.
+00:46:16.104 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:16.108 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+WARNING	2025-11-15 00:46:16	AbstractOpticalDuplicateFinderCommandLineProgram	A field field parsed out of a read name was expected to contain an integer and did not. Read name: SRR21015008.103479. Cause: String 'SRR21015008.103479' did not start with a parsable number.
+INFO	2025-11-15 00:46:17	MarkDuplicates	Read 436333 records. 0 pairs never matched.
+INFO	2025-11-15 00:46:17	MarkDuplicates	After buildSortedReadEndLists freeMemory: 279072632; totalMemory: 473956352; maxMemory: 4294967296
+INFO	2025-11-15 00:46:17	MarkDuplicates	Will retain up to 134217728 duplicate indices before spilling to disk.
+INFO	2025-11-15 00:46:17	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2025-11-15 00:46:17	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2025-11-15 00:46:17	MarkDuplicates	Sorting list of duplicate records.
+INFO	2025-11-15 00:46:17	MarkDuplicates	After generateDuplicateIndexes freeMemory: 1034206488; totalMemory: 2139095040; maxMemory: 4294967296
+INFO	2025-11-15 00:46:17	MarkDuplicates	Marking 95678 records as duplicates.
+INFO	2025-11-15 00:46:17	MarkDuplicates	Found 0 optical duplicate clusters.
+00:46:17.833 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:17.834 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+INFO	2025-11-15 00:46:17	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+00:46:17.837 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+INFO	2025-11-15 00:46:23	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2025-11-15 00:46:23	MarkDuplicates	Duplicate Index cleanup.
+INFO	2025-11-15 00:46:23	MarkDuplicates	Getting Memory Stats.
+INFO	2025-11-15 00:46:23	MarkDuplicates	Before output close freeMemory: 103577448; totalMemory: 134217728; maxMemory: 4294967296
+INFO	2025-11-15 00:46:23	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2025-11-15 00:46:23	MarkDuplicates	After output close freeMemory: 90107120; totalMemory: 119537664; maxMemory: 4294967296
+[Sat Nov 15 00:46:23 CST 2025] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.13 minutes.
+Runtime.totalMemory()=119537664
+Tool returned:
+0
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar Mutect2 -R /Volumes/T7/GTMBioinfo/reference/Homo_sapiens.GRCh38.dna.chromosome.12.fa -I /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014-2.chr12.dedup.relaxed.bam -tumor PBMC_C_MB014-2 --initial-tumor-lod 2.0 --tumor-lod-to-emit 2.0 --max-reads-per-alignment-start 100 --min-base-quality-score 20 -O /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014-2.unfiltered.relaxed.vcf.gz
+00:46:25.299 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:46:25.308 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression4488801477120825243.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression4488801477120825243.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression4488801477120825243.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression4488801477120825243.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression4488801477120825243.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:46:25.312 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:46:25.314 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6994910798643190191.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6994910798643190191.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6994910798643190191.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6994910798643190191.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6994910798643190191.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:46:25.371 INFO  Mutect2 - ------------------------------------------------------------
+00:46:25.373 INFO  Mutect2 - The Genome Analysis Toolkit (GATK) v4.6.2.0
+00:46:25.373 INFO  Mutect2 - For support and documentation go to https://software.broadinstitute.org/gatk/
+00:46:25.373 INFO  Mutect2 - Executing as justin@Justins-Mini on Mac OS X v13.5 aarch64
+00:46:25.373 INFO  Mutect2 - Java runtime: OpenJDK 64-Bit Server VM v21.0.6+9-b895.97
+00:46:25.373 INFO  Mutect2 - Start Date/Time: November 15, 2025, 12:46:25 a.m. CST
+00:46:25.373 INFO  Mutect2 - ------------------------------------------------------------
+00:46:25.373 INFO  Mutect2 - ------------------------------------------------------------
+00:46:25.373 INFO  Mutect2 - HTSJDK Version: 4.2.0
+00:46:25.373 INFO  Mutect2 - Picard Version: 3.4.0
+00:46:25.373 INFO  Mutect2 - Built for Spark Version: 3.5.0
+00:46:25.375 INFO  Mutect2 - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+00:46:25.375 INFO  Mutect2 - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+00:46:25.375 INFO  Mutect2 - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+00:46:25.375 INFO  Mutect2 - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+00:46:25.375 INFO  Mutect2 - Deflater: JdkDeflater
+00:46:25.375 INFO  Mutect2 - Inflater: JdkInflater
+00:46:25.375 INFO  Mutect2 - GCS max retries/reopens: 20
+00:46:25.375 INFO  Mutect2 - Requester pays: disabled
+00:46:25.376 INFO  Mutect2 - Initializing engine
+00:46:25.391 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:25.393 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:46:25.434 INFO  Mutect2 - Done initializing engine
+00:46:25.437 INFO  NativeLibraryLoader - Loading libgkl_utils.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_utils.dylib
+00:46:25.438 WARN  NativeLibraryLoader - Unable to load libgkl_utils.dylib from native/libgkl_utils.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils14879490221310315704.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils14879490221310315704.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils14879490221310315704.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils14879490221310315704.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils14879490221310315704.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:46:25.438 WARN  IntelSmithWaterman - Intel GKL Utils not loaded
+00:46:25.438 INFO  SmithWatermanAligner - AVX accelerated SmithWaterman implementation is not supported, falling back to the Java implementation
+00:46:25.444 INFO  NativeLibraryLoader - Loading libgkl_utils.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_utils.dylib
+00:46:25.445 WARN  NativeLibraryLoader - Unable to load libgkl_utils.dylib from native/libgkl_utils.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils17170436090283095711.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils17170436090283095711.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils17170436090283095711.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils17170436090283095711.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils17170436090283095711.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:46:25.445 WARN  IntelPairHmm - Intel GKL Utils not loaded
+00:46:25.445 INFO  PairHMM - OpenMP multi-threaded AVX-accelerated native PairHMM implementation is not supported
+00:46:25.445 INFO  NativeLibraryLoader - Loading libgkl_utils.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_utils.dylib
+00:46:25.446 WARN  NativeLibraryLoader - Unable to load libgkl_utils.dylib from native/libgkl_utils.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils1658669299136255906.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils1658669299136255906.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils1658669299136255906.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils1658669299136255906.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_utils1658669299136255906.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:46:25.446 WARN  IntelPairHmm - Intel GKL Utils not loaded
+00:46:25.446 WARN  PairHMM - ***WARNING: Machine does not have the AVX instruction set support needed for the accelerated AVX PairHmm. Falling back to the MUCH slower LOGLESS_CACHING implementation!
+00:46:25.448 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:46:25.459 INFO  ProgressMeter - Starting traversal
+00:46:25.459 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Regions Processed   Regions/Minute
+00:46:35.472 INFO  ProgressMeter -           12:6232950              0.2                 22900         137221.6
+00:46:45.491 INFO  ProgressMeter -          12:11287980              0.3                 41980         125738.8
+00:46:55.554 INFO  ProgressMeter -          12:16748468              0.5                 62340         124290.6
+00:47:05.556 INFO  ProgressMeter -          12:21895406              0.7                 81870         122507.9
+00:47:15.582 INFO  ProgressMeter -          12:26634354              0.8                 99570         119190.8
+00:47:25.590 INFO  ProgressMeter -          12:31360848              1.0                117100         116844.9
+00:47:35.600 INFO  ProgressMeter -          12:38726765              1.2                144450         123565.4
+00:47:45.603 INFO  ProgressMeter -          12:43162457              1.3                161130         120630.4
+00:47:55.604 INFO  ProgressMeter -          12:48400725              1.5                180750         120307.5
+00:48:05.647 INFO  ProgressMeter -          12:55063473              1.7                205720         123200.4
+00:48:15.658 INFO  ProgressMeter -          12:60464512              1.8                226090         123099.1
+00:48:25.939 INFO  ProgressMeter -          12:65398729              2.0                244700         121862.5
+00:48:35.939 INFO  ProgressMeter -          12:70968678              2.2                265600         122133.7
+00:48:45.939 INFO  ProgressMeter -          12:75580015              2.3                283050         120892.7
+00:48:56.012 INFO  ProgressMeter -          12:80350004              2.5                301000         119957.8
+00:49:06.020 INFO  ProgressMeter -          12:84331789              2.7                316130         118134.5
+00:49:16.023 INFO  ProgressMeter -          12:88529822              2.8                332080         116817.1
+00:49:26.024 INFO  ProgressMeter -          12:94006679              3.0                352550         117148.9
+00:49:36.121 INFO  ProgressMeter -          12:98962680              3.2                371220         116820.3
+00:49:46.121 INFO  ProgressMeter -         12:103410548              3.3                387940         115998.0
+00:49:56.144 INFO  ProgressMeter -         12:109164647              3.5                409190         116531.3
+00:50:06.235 INFO  ProgressMeter -         12:116156416              3.7                435210         118277.0
+00:50:16.236 INFO  ProgressMeter -         12:123182606              3.8                461610         120014.6
+00:50:26.263 INFO  ProgressMeter -         12:129463030              4.0                484720         120775.4
+00:50:30.373 INFO  Mutect2 - 287541 read(s) filtered by: MappingQualityReadFilter 
+0 read(s) filtered by: MappingQualityAvailableReadFilter 
+0 read(s) filtered by: MappingQualityNotZeroReadFilter 
+0 read(s) filtered by: MappedReadFilter 
+0 read(s) filtered by: NotSecondaryAlignmentReadFilter 
+44723 read(s) filtered by: NotDuplicateReadFilter 
+0 read(s) filtered by: PassesVendorQualityCheckReadFilter 
+0 read(s) filtered by: NonChimericOriginalAlignmentReadFilter 
+0 read(s) filtered by: NonZeroReferenceLengthAlignmentReadFilter 
+0 read(s) filtered by: ReadLengthReadFilter 
+0 read(s) filtered by: GoodCigarReadFilter 
+0 read(s) filtered by: WellformedReadFilter 
+332264 total reads filtered out of 436333 reads processed
+00:50:30.373 INFO  ProgressMeter -         12:133273583              4.1                498435         122108.6
+00:50:30.373 INFO  ProgressMeter - Traversal complete. Processed 498435 total regions in 4.1 minutes.
+00:50:30.380 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:50:30.384 INFO  PairHMM - Total compute time in PairHMM computeLogLikelihoods() : 33.424733213
+00:50:30.384 INFO  SmithWatermanAligner - Total compute time in java Smith-Waterman : 102.04 sec
+00:50:30.386 INFO  Mutect2 - Shutting down engine
+[November 15, 2025, 12:50:30 a.m. CST] org.broadinstitute.hellbender.tools.walkers.mutect.Mutect2 done. Elapsed time: 4.09 minutes.
+Runtime.totalMemory()=406847488
+Tool returned:
+SUCCESS
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar FilterMutectCalls -R /Volumes/T7/GTMBioinfo/reference/Homo_sapiens.GRCh38.dna.chromosome.12.fa -V /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014-2.unfiltered.relaxed.vcf.gz --min-median-mapping-quality 20 --min-median-base-quality 20 -O /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014-2.filtered.relaxed.vcf.gz
+00:50:31.302 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:50:31.309 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1077115958944064760.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1077115958944064760.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1077115958944064760.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1077115958944064760.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression1077115958944064760.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:50:31.312 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:50:31.314 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10816009389002516806.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10816009389002516806.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10816009389002516806.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10816009389002516806.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression10816009389002516806.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:50:31.368 INFO  FilterMutectCalls - ------------------------------------------------------------
+00:50:31.369 INFO  FilterMutectCalls - The Genome Analysis Toolkit (GATK) v4.6.2.0
+00:50:31.369 INFO  FilterMutectCalls - For support and documentation go to https://software.broadinstitute.org/gatk/
+00:50:31.369 INFO  FilterMutectCalls - Executing as justin@Justins-Mini on Mac OS X v13.5 aarch64
+00:50:31.369 INFO  FilterMutectCalls - Java runtime: OpenJDK 64-Bit Server VM v21.0.6+9-b895.97
+00:50:31.369 INFO  FilterMutectCalls - Start Date/Time: November 15, 2025, 12:50:31 a.m. CST
+00:50:31.369 INFO  FilterMutectCalls - ------------------------------------------------------------
+00:50:31.369 INFO  FilterMutectCalls - ------------------------------------------------------------
+00:50:31.370 INFO  FilterMutectCalls - HTSJDK Version: 4.2.0
+00:50:31.370 INFO  FilterMutectCalls - Picard Version: 3.4.0
+00:50:31.370 INFO  FilterMutectCalls - Built for Spark Version: 3.5.0
+00:50:31.371 INFO  FilterMutectCalls - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+00:50:31.371 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+00:50:31.371 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+00:50:31.371 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+00:50:31.371 INFO  FilterMutectCalls - Deflater: JdkDeflater
+00:50:31.371 INFO  FilterMutectCalls - Inflater: JdkInflater
+00:50:31.371 INFO  FilterMutectCalls - GCS max retries/reopens: 20
+00:50:31.371 INFO  FilterMutectCalls - Requester pays: disabled
+00:50:31.371 INFO  FilterMutectCalls - Initializing engine
+00:50:31.424 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:50:31.433 INFO  FeatureManager - Using codec VCFCodec to read file file:///Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014-2.unfiltered.relaxed.vcf.gz
+00:50:31.439 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:50:31.439 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:50:31.443 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:50:31.447 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:50:31.447 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:50:31.450 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:50:31.453 INFO  FilterMutectCalls - Done initializing engine
+00:50:31.464 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:50:31.479 INFO  ProgressMeter - Starting traversal
+00:50:31.479 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+00:50:31.480 INFO  FilterMutectCalls - Starting pass 0 through the variants
+00:50:31.480 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:50:33.446 INFO  FilterMutectCalls - Finished pass 0 through the variants
+00:50:34.255 INFO  FilterMutectCalls - Starting pass 1 through the variants
+00:50:34.255 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:50:35.353 INFO  FilterMutectCalls - Finished pass 1 through the variants
+00:50:35.460 INFO  FilterMutectCalls - Starting pass 2 through the variants
+00:50:35.460 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:50:36.523 INFO  FilterMutectCalls - Finished pass 2 through the variants
+00:50:36.526 INFO  FilterMutectCalls - Starting pass 3 through the variants
+00:50:36.526 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:50:38.110 INFO  FilterMutectCalls - Finished pass 3 through the variants
+00:50:38.115 INFO  FilterMutectCalls - No variants filtered by: AllowAllVariantsVariantFilter
+00:50:38.117 INFO  FilterMutectCalls - 0 read(s) filtered by: AllowAllReadsReadFilter 
+
+00:50:38.117 INFO  ProgressMeter -         12:131273316              0.1                179484        1622332.0
+00:50:38.117 INFO  ProgressMeter - Traversal complete. Processed 179484 total variants in 0.1 minutes.
+00:50:38.120 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:50:38.125 INFO  FilterMutectCalls - Shutting down engine
+[November 15, 2025, 12:50:38 a.m. CST] org.broadinstitute.hellbender.tools.walkers.mutect.filtering.FilterMutectCalls done. Elapsed time: 0.11 minutes.
+Runtime.totalMemory()=624951296
+Using GATK jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar SelectVariants -R /Volumes/T7/GTMBioinfo/reference/Homo_sapiens.GRCh38.dna.chromosome.12.fa -V /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014-2.filtered.relaxed.vcf.gz -L 12:25245350-25250930 -O /Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014-2.KRAS.relaxed.vcf.gz
+00:50:39.009 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:50:39.017 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6900043362412304087.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6900043362412304087.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6900043362412304087.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6900043362412304087.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression6900043362412304087.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:50:39.019 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/justin/miniconda3_Jun2023/envs/gatk_env/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+00:50:39.022 WARN  NativeLibraryLoader - Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression5263752777327115007.dylib: dlopen(/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression5263752777327115007.dylib, 0x0001): tried: '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression5263752777327115007.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression5263752777327115007.dylib' (no such file), '/private/var/folders/db/dkqv3mq12fg2m2pqjzjx0_700000gn/T/libgkl_compression5263752777327115007.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')))
+00:50:39.086 INFO  SelectVariants - ------------------------------------------------------------
+00:50:39.090 INFO  SelectVariants - The Genome Analysis Toolkit (GATK) v4.6.2.0
+00:50:39.090 INFO  SelectVariants - For support and documentation go to https://software.broadinstitute.org/gatk/
+00:50:39.090 INFO  SelectVariants - Executing as justin@Justins-Mini on Mac OS X v13.5 aarch64
+00:50:39.090 INFO  SelectVariants - Java runtime: OpenJDK 64-Bit Server VM v21.0.6+9-b895.97
+00:50:39.091 INFO  SelectVariants - Start Date/Time: November 15, 2025, 12:50:38 a.m. CST
+00:50:39.091 INFO  SelectVariants - ------------------------------------------------------------
+00:50:39.091 INFO  SelectVariants - ------------------------------------------------------------
+00:50:39.091 INFO  SelectVariants - HTSJDK Version: 4.2.0
+00:50:39.091 INFO  SelectVariants - Picard Version: 3.4.0
+00:50:39.091 INFO  SelectVariants - Built for Spark Version: 3.5.0
+00:50:39.094 INFO  SelectVariants - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+00:50:39.094 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+00:50:39.094 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+00:50:39.094 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+00:50:39.094 INFO  SelectVariants - Deflater: JdkDeflater
+00:50:39.095 INFO  SelectVariants - Inflater: JdkInflater
+00:50:39.095 INFO  SelectVariants - GCS max retries/reopens: 20
+00:50:39.095 INFO  SelectVariants - Requester pays: disabled
+00:50:39.095 INFO  SelectVariants - Initializing engine
+00:50:39.160 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:50:39.169 INFO  FeatureManager - Using codec VCFCodec to read file file:///Volumes/T7/GTMBioinfo/variants_low_threshold/PBMC_C_MB014-2.filtered.relaxed.vcf.gz
+00:50:39.175 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:50:39.175 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:50:39.179 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:50:39.184 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:50:39.185 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:50:39.186 WARN  IntelInflaterFactory - IntelInflater is not supported, using Java.util.zip.Inflater
+00:50:39.192 INFO  IntervalArgumentCollection - Processing 5581 bp from intervals
+00:50:39.193 INFO  SelectVariants - Done initializing engine
+00:50:39.208 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:50:39.214 INFO  ProgressMeter - Starting traversal
+00:50:39.214 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+00:50:39.216 INFO  ProgressMeter -             unmapped              0.0                     0              0.0
+00:50:39.216 INFO  ProgressMeter - Traversal complete. Processed 0 total variants in 0.0 minutes.
+00:50:39.218 WARN  IntelDeflaterFactory - Intel Deflater not supported, using Java.util.zip.Deflater
+00:50:39.219 INFO  SelectVariants - Shutting down engine
+[November 15, 2025, 12:50:39 a.m. CST] org.broadinstitute.hellbender.tools.walkers.variantutils.SelectVariants done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=115343360
+✅ Finished PBMC_C_MB014-2 in 264 seconds

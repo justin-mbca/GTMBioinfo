@@ -1,0 +1,32 @@
+#<METADATA>Ln prior of deletion of length 10=-20.72326583694641
+#<METADATA>Ln prior of deletion of length 9=-20.72326583694641
+#<METADATA>Ln prior of deletion of length 8=-20.72326583694641
+#<METADATA>Ln prior of deletion of length 7=-20.72326583694641
+#<METADATA>Ln prior of deletion of length 6=-20.72326583694641
+#<METADATA>Ln prior of deletion of length 5=-20.72326583694641
+#<METADATA>Ln prior of deletion of length 4=-20.72326583694641
+#<METADATA>Ln prior of deletion of length 3=-20.72326583694641
+#<METADATA>Ln prior of deletion of length 2=-20.72326583694641
+#<METADATA>Ln prior of deletion of length 1=-20.72326583694641
+#<METADATA>Ln prior of SNV=-6.339214458132388
+#<METADATA>Ln prior of insertion of length 1=-20.72326583694641
+#<METADATA>Ln prior of insertion of length 2=-20.72326583694641
+#<METADATA>Ln prior of insertion of length 3=-20.72326583694641
+#<METADATA>Ln prior of insertion of length 4=-20.72326583694641
+#<METADATA>Ln prior of insertion of length 5=-20.72326583694641
+#<METADATA>Ln prior of insertion of length 6=-19.055941736758303
+#<METADATA>Ln prior of insertion of length 7=-20.72326583694641
+#<METADATA>Ln prior of insertion of length 8=-19.74398267675811
+#<METADATA>Ln prior of insertion of length 9=-20.72326583694641
+#<METADATA>Ln prior of insertion of length 10=-20.72326583694641
+#<METADATA>Background beta-binomial cluster=weight = 0.0821, alpha = 4.76, beta = 0.50
+#<METADATA>High-AF beta-binomial cluster=weight = 0.0844, alpha = 10.26, beta = 0.50
+#<METADATA>Binomial cluster=weight = 0.8335, mean = 0.990
+#<METADATA>threshold=0.533
+#<METADATA>fdr=0.093
+#<METADATA>sensitivity=0.946
+filter	FP	FDR	FN	FNR
+weak_evidence	80.26	0.08	44.86	0.05
+strand_bias	0.0	0.0	0.0	0.0
+haplotype	15.63	0.02	1.77	0.0
+germline	0.5	0.0	0.0	0.0

@@ -1,0 +1,11 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	SRR21014913_1	/Users/justin/GTMBioinfo/docs/SRR21014913_1_fastqc.zip
+FastQC	all_sections	SRR21014913_2	/Users/justin/GTMBioinfo/docs/SRR21014913_2_fastqc.zip
+FastQC	all_sections	SRR21014914_1	/Users/justin/GTMBioinfo/docs/SRR21014914_1_fastqc.zip
+FastQC	all_sections	SRR21014914_2	/Users/justin/GTMBioinfo/docs/SRR21014914_2_fastqc.zip
+FastQC	all_sections	SRR21015008_1	/Users/justin/GTMBioinfo/docs/SRR21015008_1_fastqc.zip
+FastQC	all_sections	SRR21015008_2	/Users/justin/GTMBioinfo/docs/SRR21015008_2_fastqc.zip
+FastQC	all_sections	SRR21015019_1	/Users/justin/GTMBioinfo/docs/SRR21015019_1_fastqc.zip
+FastQC	all_sections	SRR21015019_2	/Users/justin/GTMBioinfo/docs/SRR21015019_2_fastqc.zip
+FastQC	all_sections	SRR21015062_1	/Users/justin/GTMBioinfo/docs/SRR21015062_1_fastqc.zip
+FastQC	all_sections	SRR21015062_2	/Users/justin/GTMBioinfo/docs/SRR21015062_2_fastqc.zip
